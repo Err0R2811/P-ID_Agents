@@ -103,7 +103,7 @@ python main.py tags path/to/diagram.pdf
 Install dependencies first if needed:
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 ### Step 3: Interpret Results

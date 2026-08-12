@@ -18,7 +18,7 @@ Extract, structure, and analyze **Piping & Instrumentation Diagrams (P&IDs)** fr
 ## Installation
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 cp .env.example .env   # then set LLM_API_KEY
 ```
 

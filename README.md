@@ -60,7 +60,7 @@ The first iteration uses a recursive, tile-based strategy to extract entities fr
 
 ```bash
 cd 1/P&ID_agent
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 # Edit .env with your API key, then run the extractor or notebooks
 python adaptive_pid_recursive_extractor.py
 ```
@@ -114,7 +114,7 @@ HAZOP_Report.md + HAZOP_Report.html
 
 ```bash
 cd 2/P&ID_agent/P&ID_agent/PHA-Agent
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 export AGNES_API_KEY="your-api-key"
 
 python adaptive_pid_recursive_extractor_v2.py 123_page-0001.jpg --output ./outputs
@@ -153,7 +153,7 @@ A modular Python package that extracts P&IDs directly from PDFs using **PyMuPDF*
 
 ```bash
 cd 3(cursor)
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 cp .env.example .env
 # Edit .env and set LLM_API_KEY
 
@@ -207,6 +207,6 @@ All three agents share the goal of converting P&IDs into structured, actionable 
 
 Each agent has its own `requirements.txt` and environment setup. In general:
 
-1. Install dependencies: `pip install -r requirements.txt`
+1. Install dependencies: `uv pip install -r requirements.txt`
 2. Copy `.env.example` (where present) to `.env` and add your API key.
 3. Run the relevant entry-point script or notebook.
