@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>P&ID Technical Diagram</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .diagram-container {
+            overflow-x: auto;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            background: #ffffff;
+            padding: 20px;
+        }
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .legend h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .legend-section {
+            margin-bottom: 20px;
+        }
+        .legend-section h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #34495e;
+            font-size: 14px;
+        }
+        .legend-item {
+            display: inline-block;
+            margin-right: 25px;
+            margin-bottom: 10px;
+        }
+        .legend-symbol {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+        .connection-description {
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #bdc3c7;
+        }
+        .connection-description h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .connection-description ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .connection-description li {
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #d5f4e6;
+            border-radius: 8px;
+            color: #27ae60;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>P&ID Technical Diagram</h1>
+        <div class="diagram-container">
+            <svg width="6000" height="1200.0" viewBox="0 0 6000 1200.0" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="white"/><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e0e0e0" stroke-width="1"/></pattern></defs><rect width="6000" height="1200.0" fill="url(#grid)"/><path d="M 300,650.0 L 1050.0,650.0 L 1050.0,315.0 L 1800,315.0 L 1800,300.0" stroke="#2c3e50" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/><rect x="1025.0" y="463.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1050.0" y="475.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Suction</text><path d="M 300,650.0 L 1050.0,650.0 L 1050.0,985.0 L 1800,985.0 L 1800,1000.0" stroke="#2c3e50" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/><rect x="1025.0" y="813.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1050.0" y="825.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Suction</text><path d="M 4100,650.0 L 4450.0,650.0 L 4450.0,315.0 L 4800,315.0 L 4800,300.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="4425.0" y="463.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="4450.0" y="475.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Supply</text><path d="M 4100,650.0 L 4450.0,650.0 L 4450.0,985.0 L 4800,985.0 L 4800,1000.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="4425.0" y="813.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="4450.0" y="825.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Supply</text><path d="M 4800,300.0 L 4800,650.0 L 4785,650.0 L 4785,1000.0 L 4800,1000.0" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#arrowhead-secondary)"/><rect x="4775.0" y="638.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="4800.0" y="650.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Recirculation</text><path d="M 4800,1000.0 L 4800,1000.0 L 4785,1000.0 L 4785,1000.0 L 4800,1000.0" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#arrowhead-secondary)"/><rect x="4775.0" y="988.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="4800.0" y="1000.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Recirculation</text><path d="M 4800,1000.0 L 2550.0,1000.0 L 2550.0,665.0 L 300,665.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="2525.0" y="813.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2550.0" y="825.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Return</text><path d="M 1800,300.0 L 2550.0,300.0 L 2550.0,635.0 L 3300,635.0 L 3300,650.0" stroke="#2c3e50" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/><rect x="2525.0" y="463.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2550.0" y="475.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Discharge</text><path d="M 1800,1000.0 L 2550.0,1000.0 L 2550.0,665.0 L 3300,665.0 L 3300,650.0" stroke="#2c3e50" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/><rect x="2525.0" y="813.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2550.0" y="825.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Discharge</text><path d="M 3300,650.0 L 3700.0,650.0 L 3700.0,635.0 L 4100,635.0 L 4100,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="3675.0" y="638.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="3700.0" y="650.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Cooled Oil</text><path d="M 4800,300.0 L 5300.0,300.0 L 5300.0,635.0 L 5800,635.0 L 5800,650.0" stroke="#2c3e50" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/><rect x="5275.0" y="463.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="5300.0" y="475.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Lubrication Supply</text><path d="M 4800,1000.0 L 5300.0,1000.0 L 5300.0,665.0 L 5800,665.0 L 5800,650.0" stroke="#2c3e50" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/><rect x="5275.0" y="813.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="5300.0" y="825.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Lubrication Supply</text><path d="M 1800,300.0 L 2050.0,300.0 L 2050.0,285.0 L 2300,285.0 L 2300,300.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="2025.0" y="288.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2050.0" y="300.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Inline Check</text><path d="M 1800,1000.0 L 2050.0,1000.0 L 2050.0,985.0 L 2300,985.0 L 2300,1000.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="2025.0" y="988.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2050.0" y="1000.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Inline Check</text><path d="M 1800,300.0 L 1800,-50.0 L 2035,-50.0 L 2035,-400.0 L 2050,-400.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="1900.0" y="-62.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1925.0" y="-50.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Discharge Relief</text><path d="M 1800,1000.0 L 1800,650.0 L 2035,650.0 L 2035,300.0 L 2050,300.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="1900.0" y="638.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1925.0" y="650.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Discharge Relief</text><path d="M 2050,-400.0 L 1175.0,-400.0 L 1175.0,635.0 L 300,635.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="1150.0" y="113.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1175.0" y="125.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Relief Return</text><path d="M 2050,300.0 L 1175.0,300.0 L 1175.0,635.0 L 300,635.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="1150.0" y="463.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1175.0" y="475.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Relief Return</text><path d="M 450,820 L 450,735.0 L 315,735.0 L 315,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="350.0" y="723.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="375.0" y="735.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Bypass Return</text><path d="M 1050,-550.0 L 1050,50.0 L 315,50.0 L 315,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="650.0" y="38.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="675.0" y="50.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Safety Relief</text><path d="M 300,-500.0 L 300,75.0 L 285,75.0 L 285,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="275.0" y="63.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="300.0" y="75.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Heating</text><path d="M 300,200.0 L 300,425.0 L 285,425.0 L 285,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="275.0" y="413.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="300.0" y="425.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Heating</text><path d="M 2050,-400.0 L 1175.0,-400.0 L 1175.0,635.0 L 300,635.0 L 300,650.0" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#arrowhead-secondary)"/><rect x="1150.0" y="113.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1175.0" y="125.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Relief</text><path d="M 2050,300.0 L 1175.0,300.0 L 1175.0,635.0 L 300,635.0 L 300,650.0" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#arrowhead-secondary)"/><rect x="1150.0" y="463.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1175.0" y="475.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Relief</text><path d="M 450,820 L 450,735.0 L 315,735.0 L 315,650.0 L 300,650.0" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#arrowhead-secondary)"/><rect x="350.0" y="723.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="375.0" y="735.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Bypass Relief</text><path d="M 1050,-550.0 L 1050,50.0 L 315,50.0 L 315,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="650.0" y="38.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="675.0" y="50.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Safety Relief</text><path d="M 1800,300.0 L 2050.0,300.0 L 2050.0,285.0 L 2300,285.0 L 2300,300.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="2025.0" y="288.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2050.0" y="300.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Inline Check Valve</text><path d="M 1800,1000.0 L 2050.0,1000.0 L 2050.0,985.0 L 2300,985.0 L 2300,1000.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="2025.0" y="988.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="2050.0" y="1000.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Inline Check Valve</text><path d="M 300,-500.0 L 300,75.0 L 285,75.0 L 285,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="275.0" y="63.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="300.0" y="75.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Heating</text><path d="M 300,200.0 L 300,425.0 L 285,425.0 L 285,650.0 L 300,650.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="275.0" y="413.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="300.0" y="425.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Heating</text><path d="M 1800,300.0 L 1800,-50.0 L 2035,-50.0 L 2035,-400.0 L 2050,-400.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="1900.0" y="-62.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1925.0" y="-50.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Protects</text><path d="M 1800,1000.0 L 1800,650.0 L 2035,650.0 L 2035,300.0 L 2050,300.0" stroke="#95a5a6" stroke-width="1" fill="none" marker-end=""/><rect x="1900.0" y="638.0" width="50" height="16" fill="white" stroke="#bdc3c7" stroke-width="1" rx="3"/><text x="1925.0" y="650.0" text-anchor="middle" fill="#2c3e50" font-size="8" font-weight="bold" dominant-baseline="middle">Protects</text><path d="M 345,565.0 L 345,607.5 L 300,607.5 L 300,650.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 415,565.0 L 357.5,565.0 L 357.5,650.0 L 300,650.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 485,565.0 L 392.5,565.0 L 392.5,650.0 L 300,650.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 345,615.0 L 322.5,615.0 L 322.5,650.0 L 300,650.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 415,615.0 L 357.5,615.0 L 357.5,650.0 L 300,650.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 1845,215.0 L 1845,257.5 L 1800,257.5 L 1800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 1915,215.0 L 1857.5,215.0 L 1857.5,300.0 L 1800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 1845,915.0 L 1845,957.5 L 1800,957.5 L 1800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 1915,915.0 L 1857.5,915.0 L 1857.5,1000.0 L 1800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 3345,565.0 L 3345,607.5 L 3300,607.5 L 3300,650.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4845,215.0 L 4845,257.5 L 4800,257.5 L 4800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4845,215.0 L 4845,607.5 L 4800,607.5 L 4800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4915,215.0 L 4857.5,215.0 L 4857.5,300.0 L 4800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4915,215.0 L 4915,607.5 L 4800,607.5 L 4800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4985,215.0 L 4892.5,215.0 L 4892.5,300.0 L 4800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4985,215.0 L 4985,607.5 L 4800,607.5 L 4800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4845,265.0 L 4822.5,265.0 L 4822.5,300.0 L 4800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4845,265.0 L 4845,632.5 L 4800,632.5 L 4800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4915,265.0 L 4857.5,265.0 L 4857.5,300.0 L 4800,300.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><path d="M 4915,265.0 L 4915,632.5 L 4800,632.5 L 4800,1000.0" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/><rect x="220" y="530.0" width="160" height="240" rx="20" fill="white" stroke="#2c3e50" stroke-width="6"/><line x1="220" y1="650.0" x2="380" y2="650.0" stroke="#2c3e50" stroke-width="4"/><text x="300" y="510.0" text-anchor="middle" fill="#2c3e50" font-size="28" font-weight="bold">TK-001</text><text x="300" y="810.0" text-anchor="middle" fill="#7f8c8d" font-size="22">Lube oil tank</text><rect x="210" y="-560.0" width="180" height="120" fill="white" stroke="#2c3e50" stroke-width="6"/><path d="M 230,-540.0 Q 250,-560.0 270,-540.0 Q 290,-520.0 310,-540.0 Q 330,-560.0 350,-540.0 Q 370,-560.0 370,-540.0" stroke="#e74c3c" stroke-width="5" fill="none"/><path d="M 230,-460.0 Q 250,-480.0 270,-460.0 Q 290,-440.0 310,-460.0 Q 330,-480.0 350,-460.0 Q 370,-440.0 370,-460.0" stroke="#e74c3c" stroke-width="5" fill="none"/><text x="300" y="-400.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">XL-001</text><rect x="210" y="140.0" width="180" height="120" fill="white" stroke="#2c3e50" stroke-width="6"/><path d="M 230,160.0 Q 250,140.0 270,160.0 Q 290,180.0 310,160.0 Q 330,140.0 350,160.0 Q 370,140.0 370,160.0" stroke="#e74c3c" stroke-width="5" fill="none"/><path d="M 230,240.0 Q 250,220.0 270,240.0 Q 290,260.0 310,240.0 Q 330,220.0 350,240.0 Q 370,260.0 370,240.0" stroke="#e74c3c" stroke-width="5" fill="none"/><text x="300" y="300.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">XL-002</text><circle cx="1800" cy="300.0" r="60" fill="white" stroke="#2c3e50" stroke-width="6"/><circle cx="1800" cy="300.0" r="40" fill="none" stroke="#2c3e50" stroke-width="4"/><line x1="1800" y1="260.0" x2="1800" y2="340.0" stroke="#2c3e50" stroke-width="4"/><line x1="1760" y1="300.0" x2="1840" y2="300.0" stroke="#2c3e50" stroke-width="4"/><text x="1800" y="390.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">P-01</text><circle cx="1800" cy="1000.0" r="60" fill="white" stroke="#2c3e50" stroke-width="6"/><circle cx="1800" cy="1000.0" r="40" fill="none" stroke="#2c3e50" stroke-width="4"/><line x1="1800" y1="960.0" x2="1800" y2="1040.0" stroke="#2c3e50" stroke-width="4"/><line x1="1760" y1="1000.0" x2="1840" y2="1000.0" stroke="#2c3e50" stroke-width="4"/><text x="1800" y="1090.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">P-02</text><polygon points="2250,250.0 2350,300.0 2250,350.0" fill="white" stroke="#2c3e50" stroke-width="6"/><line x1="2250" y1="300.0" x2="2350" y2="300.0" stroke="#2c3e50" stroke-width="4"/><text x="2300" y="380.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">CV-001</text><polygon points="2250,950.0 2350,1000.0 2250,1050.0" fill="white" stroke="#2c3e50" stroke-width="6"/><line x1="2250" y1="1000.0" x2="2350" y2="1000.0" stroke="#2c3e50" stroke-width="4"/><text x="2300" y="1080.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">CV-002</text><polygon points="2000,-460.0 2100,-460.0 2050,-365.0" fill="white" stroke="#2c3e50" stroke-width="6"/><path d="M 2030,-470.0 L 2030,-510.0 M 2070,-470.0 L 2070,-510.0" stroke="#2c3e50" stroke-width="4"/><path d="M 2020,-510.0 Q 2050,-530.0 2080,-510.0" stroke="#2c3e50" stroke-width="4" fill="none"/><text x="2050" y="-330.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">PZV-001</text><polygon points="2000,240.0 2100,240.0 2050,335.0" fill="white" stroke="#2c3e50" stroke-width="6"/><path d="M 2030,230.0 L 2030,190.0 M 2070,230.0 L 2070,190.0" stroke="#2c3e50" stroke-width="4"/><path d="M 2020,190.0 Q 2050,170.0 2080,190.0" stroke="#2c3e50" stroke-width="4" fill="none"/><text x="2050" y="370.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">PZV-002</text><rect x="3200" y="580.0" width="200" height="140" fill="white" stroke="#2c3e50" stroke-width="6"/><line x1="3200" y1="615.0" x2="3400" y2="615.0" stroke="#2c3e50" stroke-width="3"/><line x1="3200" y1="650.0" x2="3400" y2="650.0" stroke="#2c3e50" stroke-width="3"/><line x1="3200" y1="685.0" x2="3400" y2="685.0" stroke="#2c3e50" stroke-width="3"/><text x="3300" y="760.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">AIR-COOLER</text><polygon points="4050,600.0 4150,600.0 4100,700.0" fill="white" stroke="#2c3e50" stroke-width="6"/><rect x="4080" y="540.0" width="40" height="60" fill="white" stroke="#2c3e50" stroke-width="4"/><line x1="4100" y1="540.0" x2="4100" y2="520.0" stroke="#2c3e50" stroke-width="4"/><circle cx="4100" cy="515.0" r="12" fill="white" stroke="#2c3e50" stroke-width="4"/><text x="4100" y="730.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">TCV-005</text><polygon points="4800,220.0 4880,300.0 4800,380.0 4720,300.0" fill="white" stroke="#2c3e50" stroke-width="6"/><line x1="4740" y1="240.0" x2="4860" y2="360.0" stroke="#2c3e50" stroke-width="3"/><line x1="4740" y1="360.0" x2="4860" y2="240.0" stroke="#2c3e50" stroke-width="3"/><text x="4800" y="410.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">E-001</text><polygon points="4800,920.0 4880,1000.0 4800,1080.0 4720,1000.0" fill="white" stroke="#2c3e50" stroke-width="6"/><line x1="4740" y1="940.0" x2="4860" y2="1060.0" stroke="#2c3e50" stroke-width="3"/><line x1="4740" y1="1060.0" x2="4860" y2="940.0" stroke="#2c3e50" stroke-width="3"/><text x="4800" y="1110.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">E-002</text><polygon points="4750,950.0 4850,950.0 4800,1050.0" fill="white" stroke="#2c3e50" stroke-width="6"/><rect x="4780" y="890.0" width="40" height="60" fill="white" stroke="#2c3e50" stroke-width="4"/><line x1="4800" y1="890.0" x2="4800" y2="870.0" stroke="#2c3e50" stroke-width="4"/><circle cx="4800" cy="865.0" r="12" fill="white" stroke="#2c3e50" stroke-width="4"/><text x="4800" y="1080.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">PCV-001</text><polygon points="400,770 500,770 450,870" fill="white" stroke="#2c3e50" stroke-width="6"/><rect x="430" y="710" width="40" height="60" fill="white" stroke="#2c3e50" stroke-width="4"/><line x1="450" y1="710" x2="450" y2="690" stroke="#2c3e50" stroke-width="4"/><circle cx="450" cy="685" r="12" fill="white" stroke="#2c3e50" stroke-width="4"/><text x="450" y="900" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">PCV-002</text><circle cx="5800" cy="650.0" r="70" fill="white" stroke="#2c3e50" stroke-width="6"/><text x="5800" y="670.0" text-anchor="middle" fill="#2c3e50" font-size="50" font-weight="bold">K</text><text x="5800" y="760.0" text-anchor="middle" fill="#2c3e50" font-size="26" font-weight="bold">K-01</text><polygon points="1000,-610.0 1100,-610.0 1050,-515.0" fill="white" stroke="#2c3e50" stroke-width="6"/><path d="M 1030,-620.0 L 1030,-660.0 M 1070,-620.0 L 1070,-660.0" stroke="#2c3e50" stroke-width="4"/><path d="M 1020,-660.0 Q 1050,-680.0 1080,-660.0" stroke="#2c3e50" stroke-width="4" fill="none"/><text x="1050" y="-480.0" text-anchor="middle" fill="#2c3e50" font-size="24" font-weight="bold">PSV-005</text><circle cx="345" cy="565.0" r="50" fill="white" stroke="#9b59b6" stroke-width="6"/><text x="345" y="577.0" text-anchor="middle" fill="#9b59b6" font-size="22" font-weight="bold">LG-001</text><circle cx="415" cy="565.0" r="50" fill="white" stroke="#9b59b6" stroke-width="6"/><text x="415" y="577.0" text-anchor="middle" fill="#9b59b6" font-size="22" font-weight="bold">LS-004</text><circle cx="485" cy="565.0" r="50" fill="white" stroke="#9b59b6" stroke-width="6"/><text x="485" y="577.0" text-anchor="middle" fill="#9b59b6" font-size="22" font-weight="bold">L-004</text><circle cx="345" cy="615.0" r="50" fill="white" stroke="#9b59b6" stroke-width="6"/><text x="345" y="627.0" text-anchor="middle" fill="#9b59b6" font-size="22" font-weight="bold">DIP-STICK</text><circle cx="415" cy="615.0" r="50" fill="white" stroke="#e74c3c" stroke-width="6"/><text x="415" y="627.0" text-anchor="middle" fill="#e74c3c" font-size="22" font-weight="bold">TG-001</text><circle cx="1845" cy="215.0" r="50" fill="white" stroke="#3498db" stroke-width="6"/><text x="1845" y="227.0" text-anchor="middle" fill="#3498db" font-size="22" font-weight="bold">PI-001</text><circle cx="1915" cy="215.0" r="50" fill="white" stroke="#3498db" stroke-width="6"/><text x="1915" y="227.0" text-anchor="middle" fill="#3498db" font-size="22" font-weight="bold">PG-001</text><circle cx="1845" cy="915.0" r="50" fill="white" stroke="#3498db" stroke-width="6"/><text x="1845" y="927.0" text-anchor="middle" fill="#3498db" font-size="22" font-weight="bold">PI-005</text><circle cx="1915" cy="915.0" r="50" fill="white" stroke="#3498db" stroke-width="6"/><text x="1915" y="927.0" text-anchor="middle" fill="#3498db" font-size="22" font-weight="bold">PG-005</text><circle cx="3345" cy="565.0" r="50" fill="white" stroke="#e74c3c" stroke-width="6"/><text x="3345" y="577.0" text-anchor="middle" fill="#e74c3c" font-size="22" font-weight="bold">TG-003</text><circle cx="4845" cy="215.0" r="50" fill="white" stroke="#95a5a6" stroke-width="6"/><text x="4845" y="227.0" text-anchor="middle" fill="#95a5a6" font-size="22" font-weight="bold">PDT-004</text><circle cx="4915" cy="215.0" r="50" fill="white" stroke="#95a5a6" stroke-width="6"/><text x="4915" y="227.0" text-anchor="middle" fill="#95a5a6" font-size="22" font-weight="bold">PDI-004</text><circle cx="4985" cy="215.0" r="50" fill="white" stroke="#95a5a6" stroke-width="6"/><text x="4985" y="227.0" text-anchor="middle" fill="#95a5a6" font-size="22" font-weight="bold">PDS-004</text><circle cx="4845" cy="265.0" r="50" fill="white" stroke="#95a5a6" stroke-width="6"/><text x="4845" y="277.0" text-anchor="middle" fill="#95a5a6" font-size="22" font-weight="bold">PD-004</text><circle cx="4915" cy="265.0" r="50" fill="white" stroke="#3498db" stroke-width="6"/><text x="4915" y="277.0" text-anchor="middle" fill="#3498db" font-size="22" font-weight="bold">PS-007</text></svg>
+        </div>
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-section">
+                <h4>Component Types</h4>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: white; border: 2px solid #2c3e50;"></span>
+                    Equipment (Tanks, Pumps, Filters, etc.)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: white; border: 2px solid #2c3e50;"></span>
+                    Valves (Control, Relief, Check)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: white; border: 2px solid #e74c3c;"></span>
+                    Temperature Instruments
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: white; border: 2px solid #3498db;"></span>
+                    Pressure Instruments
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: white; border: 2px solid #9b59b6;"></span>
+                    Level Instruments
+                </div>
+            </div>
+            <div class="legend-section">
+                <h4>Connection Types</h4>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: #2c3e50;"></span>
+                    Main Process Lines (Thick dark)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: #7f8c8d;"></span>
+                    Secondary Lines (Medium gray)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: #e74c3c;"></span>
+                    Electrical Signals (Red dashed)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-symbol" style="background: #3498db;"></span>
+                    Pneumatic Signals (Blue long-dash)
+                </div>
+            </div>
+            <div class="connection-description">
+                <h4>Connection Descriptions</h4>
+                <ul>
+                    <li><strong>Suction:</strong> Oil flow from tank to pumps</li>
+                    <li><strong>Discharge:</strong> Pressurized oil from pumps to cooler</li>
+                    <li><strong>Cooled Oil:</strong> Temperature-controlled oil to filters</li>
+                    <li><strong>Supply:</strong> Filtered oil to compressor</li>
+                    <li><strong>Recirculation:</strong> Return flow to tank via control valve</li>
+                    <li><strong>Relief:</strong> Pressure relief paths to tank</li>
+                    <li><strong>Heating:</strong> Tank heating from heaters</li>
+                    <li><strong>Control:</strong> Pneumatic control signals</li>
+                    <li><strong>Monitors:</strong> Electrical monitoring signals</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <strong>Nodes:</strong> 40 | 
+            <strong>Edges:</strong> 58 | 
+            <strong>Source:</strong> Generated from JSON connectivity data
+        </div>
+    </div>
+</body>
+</html>

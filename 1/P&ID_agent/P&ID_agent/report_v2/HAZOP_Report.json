@@ -1,0 +1,2947 @@
+{
+  "report": {
+    "system_name": "Lube Oil System",
+    "total_nodes": 9,
+    "total_deviations": 121,
+    "total_actions": 31,
+    "risk_distribution": {
+      "high": 31,
+      "medium": 90
+    }
+  },
+  "hazop_nodes": [
+    {
+      "node_id": "TK-001",
+      "description": "Lube and Seal Oil Tank (TK-001)",
+      "design_intent": "Store lube oil at correct level and temperature",
+      "parameters": [
+        "Level",
+        "Temperature",
+        "Composition"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Level",
+          "deviation": "NO Level",
+          "cause": "Leak, drain valve open, no inflow",
+          "consequence": "Pump cavitation, loss of lubrication supply, compressor damage",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MAJOR",
+          "likelihood": "UNLIKELY",
+          "risk_score": 8,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Verify level switch interlock, confirm low level alarm setpoint",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Level",
+          "deviation": "MORE Level",
+          "cause": "Inflow exceeds outflow, overflow from upstream",
+          "consequence": "Tank overflow, environmental spill, fire hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MAJOR",
+          "likelihood": "UNLIKELY",
+          "risk_score": 8,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Level",
+          "deviation": "LESS Level",
+          "cause": "Leak, evaporation, outflow exceeds inflow",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Level",
+          "deviation": "REVERSE Level",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Level",
+          "deviation": "OTHER THAN Level",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Composition",
+          "deviation": "NO Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Composition",
+          "deviation": "MORE Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Composition",
+          "deviation": "LESS Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Composition",
+          "deviation": "AS WELL AS Composition",
+          "cause": "Contamination, water ingress, wrong oil grade",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Composition",
+          "deviation": "OTHER THAN Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "LG-001 (Level Glass Gauge)",
+            "LS-004 (Level Switch)",
+            "L-004 (Local Level Alarm Light)",
+            "LI-001 (Level Indicator)",
+            "DIP-STICK (Manual Dip Stick)",
+            "TG-001 (Tank Temperature Gauge)",
+            "TT-001 (Tank Temperature Transmitter)",
+            "FI-001 (Tank Oil Flow Indicator)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "P-01",
+      "description": "Lube Oil Pump 1 (P-01)",
+      "design_intent": "Supply lube oil at required pressure and flow rate",
+      "parameters": [
+        "Flow",
+        "Pressure",
+        "Temperature"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "Loss of compressor lubrication, potential equipment damage",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Pressure",
+          "deviation": "NO Pressure",
+          "cause": "Pump failure, relief valve opening, leak",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Pressure",
+          "deviation": "MORE Pressure",
+          "cause": "Pump overspeed, blockage downstream, thermal expansion",
+          "consequence": "Overpressure, relief valve activation, seal damage",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Pressure",
+          "deviation": "LESS Pressure",
+          "cause": "Pump wear, leak, partial relief valve opening",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Pressure",
+          "deviation": "OTHER THAN Pressure",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-001 (P-01 Suction Pressure Indicator)",
+            "PG-001 (P-01 Discharge Pressure Gauge)",
+            "PSV-001 (P-01 Pressure Switch Valve)",
+            "Relief path via PZV-001",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "P-02",
+      "description": "Lube Oil Pump 2 (P-02)",
+      "design_intent": "Supply lube oil at required pressure and flow rate",
+      "parameters": [
+        "Flow",
+        "Pressure",
+        "Temperature"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "Loss of compressor lubrication, potential equipment damage",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Pressure",
+          "deviation": "NO Pressure",
+          "cause": "Pump failure, relief valve opening, leak",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Pressure",
+          "deviation": "MORE Pressure",
+          "cause": "Pump overspeed, blockage downstream, thermal expansion",
+          "consequence": "Overpressure, relief valve activation, seal damage",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Pressure",
+          "deviation": "LESS Pressure",
+          "cause": "Pump wear, leak, partial relief valve opening",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Pressure",
+          "deviation": "OTHER THAN Pressure",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PI-005 (P-02 Suction Pressure Indicator)",
+            "PG-005 (P-02 Discharge Pressure Gauge)",
+            "PSV-002 (P-02 Pressure Switch Valve)",
+            "Relief path via PZV-002",
+            "Redundancy: pumps"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "AIR-COOLER",
+      "description": "Air Cooler (AIR-COOLER)",
+      "design_intent": "Cool hot oil to optimal temperature for compressor lubrication",
+      "parameters": [
+        "Temperature",
+        "Flow"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Verify cooler capacity, check temperature controller tuning",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Verify pump auto-start logic, confirm standby pump availability",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Establish filter change schedule, verify DP alarm setpoints",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TG-003 (Air Cooler Outlet Temperature Gauge)"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "E-001",
+      "description": "Oil Filter 1 (E-001)",
+      "design_intent": "Remove contaminants from lube oil before compressor supply",
+      "parameters": [
+        "Flow",
+        "Pressure",
+        "Composition"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "No filtration, contaminated oil reaches compressor",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Pressure",
+          "deviation": "NO Pressure",
+          "cause": "Pump failure, relief valve opening, leak",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Pressure",
+          "deviation": "MORE Pressure",
+          "cause": "Pump overspeed, blockage downstream, thermal expansion",
+          "consequence": "High differential pressure, filter element damage, bypass opening",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Pressure",
+          "deviation": "LESS Pressure",
+          "cause": "Pump wear, leak, partial relief valve opening",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Pressure",
+          "deviation": "OTHER THAN Pressure",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Composition",
+          "deviation": "NO Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Composition",
+          "deviation": "MORE Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Composition",
+          "deviation": "LESS Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Composition",
+          "deviation": "AS WELL AS Composition",
+          "cause": "Contamination, water ingress, wrong oil grade",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Composition",
+          "deviation": "OTHER THAN Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "E-002",
+      "description": "Oil Filter 2 (E-002)",
+      "design_intent": "Remove contaminants from lube oil before compressor supply",
+      "parameters": [
+        "Flow",
+        "Pressure",
+        "Composition"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "No filtration, contaminated oil reaches compressor",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Pressure",
+          "deviation": "NO Pressure",
+          "cause": "Pump failure, relief valve opening, leak",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Pressure",
+          "deviation": "MORE Pressure",
+          "cause": "Pump overspeed, blockage downstream, thermal expansion",
+          "consequence": "High differential pressure, filter element damage, bypass opening",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Pressure",
+          "deviation": "LESS Pressure",
+          "cause": "Pump wear, leak, partial relief valve opening",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Pressure",
+          "deviation": "OTHER THAN Pressure",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Composition",
+          "deviation": "NO Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Composition",
+          "deviation": "MORE Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Composition",
+          "deviation": "LESS Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Composition",
+          "deviation": "AS WELL AS Composition",
+          "cause": "Contamination, water ingress, wrong oil grade",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Composition",
+          "deviation": "OTHER THAN Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "PDT-004 (Filter DP Transmitter)",
+            "PDI-004 (Filter DP Indicator)",
+            "PDS-004 (Filter DP Switch/Alarm)",
+            "PD-004 (Filter Pressure Drop Indicator)",
+            "PS-007 (Filter Protection Pressure Switch)",
+            "PS-006 (Filter Low Pressure Switch)",
+            "Redundancy: filters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "K-01",
+      "description": "Compressor K-01 (K-01)",
+      "design_intent": "Receive clean, temperature-controlled lube oil for bearing lubrication",
+      "parameters": [
+        "Flow",
+        "Pressure",
+        "Temperature",
+        "Composition"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "Loss of lubrication, bearing damage, compressor trip, potential fire",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MAJOR",
+          "likelihood": "POSSIBLE",
+          "risk_score": 12,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Verify pump auto-start logic, confirm standby pump availability",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Establish filter change schedule, verify DP alarm setpoints",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Pressure",
+          "deviation": "NO Pressure",
+          "cause": "Pump failure, relief valve opening, leak",
+          "consequence": "Loss of lubrication, bearing damage, compressor trip, potential fire",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MAJOR",
+          "likelihood": "POSSIBLE",
+          "risk_score": 12,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Review pressure switch settings, verify alarm response procedures",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Pressure",
+          "deviation": "MORE Pressure",
+          "cause": "Pump overspeed, blockage downstream, thermal expansion",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Verify relief valve setpoints, inspect for blockage",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Pressure",
+          "deviation": "LESS Pressure",
+          "cause": "Pump wear, leak, partial relief valve opening",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Pressure",
+          "deviation": "OTHER THAN Pressure",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Oil degradation, reduced viscosity, bearing overheating",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Verify cooler capacity, check temperature controller tuning",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Composition",
+          "deviation": "NO Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Composition",
+          "deviation": "MORE Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Composition",
+          "deviation": "LESS Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Composition",
+          "deviation": "AS WELL AS Composition",
+          "cause": "Contamination, water ingress, wrong oil grade",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Composition",
+          "deviation": "OTHER THAN Composition",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "No automatic safeguards identified"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "POSSIBLE",
+          "risk_score": 9,
+          "risk_level": "high",
+          "action_required": true,
+          "action_description": "Investigate and implement appropriate safeguards",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "XL-001",
+      "description": "Tank Heater 1 (XL-001)",
+      "design_intent": "Maintain tank oil temperature above minimum during cold conditions",
+      "parameters": [
+        "Temperature",
+        "Flow"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    },
+    {
+      "node_id": "XL-002",
+      "description": "Tank Heater 2 (XL-002)",
+      "design_intent": "Maintain tank oil temperature above minimum during cold conditions",
+      "parameters": [
+        "Temperature",
+        "Flow"
+      ],
+      "deviations": [
+        {
+          "guide_word": "NO",
+          "parameter": "Temperature",
+          "deviation": "NO Temperature",
+          "cause": "Sensor failure, heater/cooler malfunction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Temperature",
+          "deviation": "MORE Temperature",
+          "cause": "Heater malfunction, cooler failure, ambient temperature rise",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Temperature",
+          "deviation": "LESS Temperature",
+          "cause": "Cooler overcooling, heater failure, ambient drop",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Temperature",
+          "deviation": "OTHER THAN Temperature",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "NO",
+          "parameter": "Flow",
+          "deviation": "NO Flow",
+          "cause": "Pump failure, blockage, valve closure, low tank level",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "MORE",
+          "parameter": "Flow",
+          "deviation": "MORE Flow",
+          "cause": "Control valve failure open, recirculation valve stuck",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "LESS",
+          "parameter": "Flow",
+          "deviation": "LESS Flow",
+          "cause": "Partial blockage, filter clogging, valve restriction",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "REVERSE",
+          "parameter": "Flow",
+          "deviation": "REVERSE Flow",
+          "cause": "Check valve failure, pump shutdown with back pressure",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "AS WELL AS",
+          "parameter": "Flow",
+          "deviation": "AS WELL AS Flow",
+          "cause": "Unknown cause - requires investigation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        },
+        {
+          "guide_word": "OTHER THAN",
+          "parameter": "Flow",
+          "deviation": "OTHER THAN Flow",
+          "cause": "Wrong fluid, two-phase flow, cavitation",
+          "consequence": "Process upset, potential equipment damage, safety hazard",
+          "safeguards": [
+            "TT-002 (Heater Temperature Transmitter)",
+            "FI-002 (Heater Flow Indicator)",
+            "Redundancy: heaters"
+          ],
+          "severity": "MODERATE",
+          "likelihood": "UNLIKELY",
+          "risk_score": 6,
+          "risk_level": "medium",
+          "action_required": false,
+          "action_description": "",
+          "responsible": "",
+          "due_date": ""
+        }
+      ]
+    }
+  ],
+  "action_items": [
+    {
+      "description": "Verify level switch interlock, confirm low level alarm setpoint",
+      "node": "TK-001",
+      "risk": "high (8)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "TK-001",
+      "risk": "high (8)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Verify cooler capacity, check temperature controller tuning",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Verify pump auto-start logic, confirm standby pump availability",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Establish filter change schedule, verify DP alarm setpoints",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "AIR-COOLER",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Verify pump auto-start logic, confirm standby pump availability",
+      "node": "K-01",
+      "risk": "high (12)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Establish filter change schedule, verify DP alarm setpoints",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Review pressure switch settings, verify alarm response procedures",
+      "node": "K-01",
+      "risk": "high (12)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Verify relief valve setpoints, inspect for blockage",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Verify cooler capacity, check temperature controller tuning",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    },
+    {
+      "description": "Investigate and implement appropriate safeguards",
+      "node": "K-01",
+      "risk": "high (9)",
+      "responsible": "TBD",
+      "due_date": "TBD"
+    }
+  ]
+}

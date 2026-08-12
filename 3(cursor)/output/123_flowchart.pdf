@@ -1,0 +1,147 @@
+%PDF-1.4
+1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj
+2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj
+3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 1190 842]/Contents 4 0 R/Resources<</Font<</F1 5 0 R/F2 6 0 R>>>>>>endobj
+4 0 obj<</Length 7800>>stream
+q
+0.97 0.98 0.99 rg 0 0 1190 842 re f Q
+q 0.1 0.1 0.18 rg BT /F2 22 Tf 1 0 0 1 320 800 Tm (Lube Oil System - Process Flowchart) Tj ET Q
+q 0.33 0.33 0.33 rg BT /F1 11 Tf 1 0 0 1 360 775 Tm (Compressor K-01  |  Source: 123.pdf P&ID) Tj ET Q
+q 0.53 0.53 0.53 rg BT /F1 9 Tf 1 0 0 1 230 755 Tm (Schematic flow - equipment from extraction; connections inferred from typical lube oil topology) Tj ET Q
+
+% COMPRESSOR K-01
+q 0.996 0.886 0.886 rg 395 640 400 55 re f Q
+q 0.863 0.149 0.149 RG 2 w 395 640 400 55 re S Q
+q 0.1 0.1 0.18 rg BT /F2 14 Tf 1 0 0 1 520 665 Tm (COMPRESSOR K-01) Tj ET Q
+
+% AIR COOLER
+q 0.812 0.98 0.996 rg 445 560 300 45 re f Q
+q 0.031 0.569 0.698 RG 1.5 w 445 560 300 45 re S Q
+BT /F2 12 Tf 1 0 0 1 520 578 Tm (AIR COOLER H-004) Tj ET
+
+% HEATER 001
+q 1 0.929 0.835 rg 120 560 200 45 re f Q
+q 0.918 0.345 0.047 RG 1.5 w 120 560 200 45 re S Q
+BT /F2 12 Tf 1 0 0 1 165 578 Tm (HEATER 001) Tj ET
+
+% HEATER 002
+q 1 0.929 0.835 rg 870 560 200 45 re f Q
+q 0.918 0.345 0.047 RG 1.5 w 870 560 200 45 re S Q
+BT /F2 12 Tf 1 0 0 1 915 578 Tm (HEATER 002) Tj ET
+
+% OIL FILTER
+q 0.878 0.949 0.996 rg 465 470 260 45 re f Q
+q 0.008 0.518 0.78 RG 1.5 w 465 470 260 45 re S Q
+BT /F2 12 Tf 1 0 0 1 530 488 Tm (OIL FILTER 007) Tj ET
+
+% PUMP P-01
+q 0.859 0.918 0.996 rg 120 470 200 45 re f Q
+q 0.145 0.388 0.922 RG 1.5 w 120 470 200 45 re S Q
+BT /F2 11 Tf 1 0 0 1 145 488 Tm (LUBE OIL PUMP P-01) Tj ET
+
+% PUMP P-02
+q 0.859 0.918 0.996 rg 870 470 200 45 re f Q
+q 0.145 0.388 0.922 RG 1.5 w 870 470 200 45 re S Q
+BT /F2 11 Tf 1 0 0 1 895 488 Tm (LUBE OIL PUMP P-02) Tj ET
+
+% TANK
+q 0.863 0.988 0.906 rg 345 340 500 60 re f Q
+q 0.086 0.639 0.227 RG 2 w 345 340 500 60 re S Q
+BT /F2 13 Tf 1 0 0 1 470 370 Tm (LUBE AND SEAL OIL TANK) Tj ET
+BT /F1 9 Tf 1 0 0 1 430 352 Tm (LG | LS | MANWAY 004/005 | DIP STICK 004) Tj ET
+
+% Valves - diamonds as small squares rotated visually approximated
+q 0.996 0.953 0.78 rg 250 395 20 20 re f Q
+BT /F1 8 Tf 1 0 0 1 235 385 Tm (PCV-001) Tj ET
+q 0.996 0.953 0.78 rg 920 395 20 20 re f Q
+BT /F1 8 Tf 1 0 0 1 905 385 Tm (PCV-002) Tj ET
+q 0.996 0.953 0.78 rg 585 530 20 20 re f Q
+BT /F1 8 Tf 1 0 0 1 570 520 Tm (TCV-005) Tj ET
+q 0.996 0.953 0.78 rg 210 530 20 20 re f Q
+BT /F1 8 Tf 1 0 0 1 195 520 Tm (PZV-001) Tj ET
+q 0.996 0.953 0.78 rg 960 530 20 20 re f Q
+BT /F1 8 Tf 1 0 0 1 945 520 Tm (PZV-002) Tj ET
+q 0.996 0.953 0.78 rg 585 605 20 20 re f Q
+BT /F1 8 Tf 1 0 0 1 570 595 Tm (PZV-005) Tj ET
+
+% Instruments
+q 0.929 0.914 0.996 rg 1080 655 35 35 re f Q
+q 0.482 0.227 0.871 RG 1 w 1080 655 35 35 re S Q
+BT /F1 7 Tf 1 0 0 1 1088 670 Tm (TIC-004) Tj ET
+q 0.929 0.914 0.996 rg 1080 570 35 35 re f Q
+BT /F1 7 Tf 1 0 0 1 1088 585 Tm (PDT-004) Tj ET
+q 0.929 0.914 0.996 rg 1080 485 35 35 re f Q
+BT /F1 7 Tf 1 0 0 1 1095 500 Tm (PDI) Tj ET
+q 0.929 0.914 0.996 rg 60 655 35 35 re f Q
+BT /F1 7 Tf 1 0 0 1 68 670 Tm (PG-001) Tj ET
+
+% Flow arrows - process (dark)
+q 0.2 0.25 0.33 RG 2 w 420 400 220 470 m l S Q
+q 0.2 0.25 0.33 RG 2 w 770 400 970 470 m l S Q
+q 0.2 0.25 0.33 RG 2 w 320 492 465 492 m l S Q
+q 0.2 0.25 0.33 RG 2 w 870 492 725 492 m l S Q
+q 0.2 0.25 0.33 RG 2 w 595 560 595 515 m l S Q
+q 0.2 0.25 0.33 RG 2 w 520 515 320 560 m l S Q
+q 0.2 0.25 0.33 RG 2 w 670 515 870 560 m l S Q
+q 0.2 0.25 0.33 RG 2 w 595 640 595 605 m l S Q
+q 0.2 0.25 0.33 RG 2 w 520 605 470 655 m l S Q
+q 0.2 0.25 0.33 RG 2 w 670 605 720 655 m l S Q
+
+% Return arrows (green)
+q 0.086 0.639 0.227 RG 2.5 w 470 695 350 400 m l S Q
+q 0.086 0.639 0.227 RG 2.5 w 720 695 840 400 m l S Q
+BT /F1 9 Tf 0.086 0.639 0.227 rg 1 0 0 1 300 550 Tm (Return) Tj ET
+BT /F1 9 Tf 0.086 0.639 0.227 rg 1 0 0 1 820 550 Tm (TO TANK) Tj ET
+
+% Control dashed
+q 0.482 0.227 0.871 RG 1 w [4 3] 0 d 1080 672 600 615 m l S Q
+[] 0 d
+BT /F1 8 Tf 0.482 0.227 0.871 rg 1 0 0 1 850 640 Tm (TIC-004 -> TCV-005) Tj ET
+
+% Legend box
+q 1 1 1 rg 40 80 300 180 re f Q
+q 0.8 0.8 0.8 RG 1 w 40 80 300 180 re S Q
+BT /F2 11 Tf 0.1 0.1 0.18 rg 1 0 0 1 55 235 Tm (Legend) Tj ET
+q 0.859 0.918 0.996 rg 55 210 25 15 re f Q
+BT /F1 9 Tf 1 0 0 1 90 212 Tm (Equipment) Tj ET
+q 0.996 0.953 0.78 rg 55 185 15 15 re f Q
+BT /F1 9 Tf 1 0 0 1 90 187 Tm (Valve) Tj ET
+q 0.929 0.914 0.996 rg 55 160 15 15 re f Q
+BT /F1 9 Tf 1 0 0 1 90 162 Tm (Instrument) Tj ET
+q 0.2 0.25 0.33 RG 2 w 55 135 85 135 m l S Q
+BT /F1 9 Tf 1 0 0 1 90 128 Tm (Process flow) Tj ET
+q 0.086 0.639 0.227 RG 2 w 55 110 85 110 m l S Q
+BT /F1 9 Tf 1 0 0 1 90 103 Tm (Return to tank) Tj ET
+
+% Flow sequence panel
+q 1 1 1 rg 380 80 430 120 re f Q
+q 0.8 0.8 0.8 RG 1 w 380 80 430 120 re S Q
+BT /F2 11 Tf 0.1 0.1 0.18 rg 1 0 0 1 430 175 Tm (Process Flow Sequence) Tj ET
+BT /F1 9 Tf 0.28 0.33 0.41 rg 1 0 0 1 395 150 Tm (Tank -> Pumps P-01/P-02 -> Oil Filter -> Heaters / Cooler) Tj ET
+BT /F1 9 Tf 1 0 0 1 420 130 Tm (-> Compressor K-01 -> Return to Tank) Tj ET
+BT /F1 8 Tf 1 0 0 1 390 105 Tm (Valves: PCV-001/002, TCV-005, PZV-001/002/005) Tj ET
+
+% Tags panel
+q 1 1 1 rg 830 80 320 120 re f Q
+q 0.8 0.8 0.8 RG 1 w 830 80 320 120 re S Q
+BT /F2 11 Tf 0.1 0.1 0.18 rg 1 0 0 1 870 175 Tm (Extracted Tags) Tj ET
+BT /F1 8 Tf 0.28 0.33 0.41 rg 1 0 0 1 840 150 Tm (K-01, P-01, P-02, TIC-004, PDT-004,) Tj ET
+BT /F1 8 Tf 1 0 0 1 840 130 Tm (PG-001, PCV-001/002, TCV-005,) Tj ET
+BT /F1 8 Tf 1 0 0 1 840 110 Tm (PZV-001/002/005, PDI, LG, LS, PS) Tj ET
+endstream
+endobj
+5 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>endobj
+6 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica-Bold>>endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000268 00000 n 
+0000008120 00000 n 
+0000008188 00000 n 
+trailer<</Size 7/Root 1 0 R>>
+startxref
+8262
+%%EOF

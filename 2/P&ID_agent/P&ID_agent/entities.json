@@ -1,0 +1,1226 @@
+[
+  {
+    "tag": "TTL-001",
+    "type": "text",
+    "description": "Title text 'Lube Oil System'",
+    "line_number": "",
+    "service": "",
+    "local_bbox": [
+      0.187,
+      0.396,
+      0.802,
+      0.546
+    ],
+    "tile_bbox": [
+      0,
+      0,
+      1929,
+      1364
+    ],
+    "depth": 0,
+    "tile_id": 0,
+    "global_bbox": [
+      360.723,
+      540.144,
+      1547.058,
+      744.744
+    ]
+  },
+  {
+    "tag": "COMP-001",
+    "type": "equipment",
+    "description": "Label 'Compress' (likely Compressor) visible on the right",
+    "line_number": "",
+    "service": "",
+    "local_bbox": [
+      0.879,
+      0.578,
+      0.982,
+      0.632
+    ],
+    "tile_bbox": [
+      0,
+      0,
+      1929,
+      1364
+    ],
+    "depth": 0,
+    "tile_id": 0,
+    "global_bbox": [
+      1695.591,
+      788.3919999999999,
+      1894.278,
+      862.048
+    ]
+  },
+  {
+    "tag": "K-01",
+    "type": "equipment",
+    "description": "Compressor",
+    "line_number": "",
+    "service": "",
+    "local_bbox": [
+      0.0,
+      0.5,
+      0.35,
+      0.72
+    ],
+    "tile_bbox": [
+      1579,
+      0,
+      3509,
+      1364
+    ],
+    "depth": 0,
+    "tile_id": 1,
+    "global_bbox": [
+      1579.0,
+      682.0,
+      2254.5,
+      982.0799999999999
+    ]
+  },
+  {
+    "tag": "P-01",
+    "type": "equipment",
+    "description": "Lube Oil Pump",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.368,
+      0.617,
+      0.416,
+      0.658
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      709.872,
+      1957.588,
+      802.4639999999999,
+      2013.5120000000002
+    ]
+  },
+  {
+    "tag": "P-02",
+    "type": "equipment",
+    "description": "Lube Oil Pump",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.544,
+      0.617,
+      0.592,
+      0.658
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1049.376,
+      1957.588,
+      1141.9679999999998,
+      2013.5120000000002
+    ]
+  },
+  {
+    "tag": "K-01",
+    "type": "equipment",
+    "description": "Air Cooler",
+    "line_number": "",
+    "service": "Lube Oil / Air",
+    "local_bbox": [
+      0.611,
+      0.224,
+      0.789,
+      0.283
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1178.619,
+      1421.536,
+      1521.981,
+      1502.012
+    ]
+  },
+  {
+    "tag": "XL-001",
+    "type": "equipment",
+    "description": "Heater Element",
+    "line_number": "",
+    "service": "Electric / Heat",
+    "local_bbox": [
+      0.258,
+      0.723,
+      0.289,
+      0.774
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      497.682,
+      2102.172,
+      557.481,
+      2171.736
+    ]
+  },
+  {
+    "tag": "PZV-001",
+    "type": "valves",
+    "description": "Pressure Relief Valve",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.45,
+      0.542,
+      0.472,
+      0.582
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      868.0500000000001,
+      1855.288,
+      910.4879999999999,
+      1909.848
+    ]
+  },
+  {
+    "tag": "PZV-002",
+    "type": "valves",
+    "description": "Pressure Relief Valve",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.523,
+      0.542,
+      0.545,
+      0.582
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1008.8670000000001,
+      1855.288,
+      1051.305,
+      1909.848
+    ]
+  },
+  {
+    "tag": "PCV-002",
+    "type": "valves",
+    "description": "Pressure Control Valve",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.601,
+      0.378,
+      0.623,
+      0.422
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1159.329,
+      1631.592,
+      1201.767,
+      1691.608
+    ]
+  },
+  {
+    "tag": "TCV-005",
+    "type": "valves",
+    "description": "Temperature Control Valve",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.737,
+      0.378,
+      0.758,
+      0.417
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1421.673,
+      1631.592,
+      1462.182,
+      1684.788
+    ]
+  },
+  {
+    "tag": "PCV-001",
+    "type": "valves",
+    "description": "Pressure Control Valve",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.894,
+      0.438,
+      0.917,
+      0.482
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1724.526,
+      1713.432,
+      1768.893,
+      1773.4479999999999
+    ]
+  },
+  {
+    "tag": "PG-001",
+    "type": "instruments",
+    "description": "Pressure Gauge",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.412,
+      0.433,
+      0.438,
+      0.473
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      794.7479999999999,
+      1706.612,
+      844.902,
+      1761.172
+    ]
+  },
+  {
+    "tag": "PG-005",
+    "type": "instruments",
+    "description": "Pressure Gauge",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.572,
+      0.433,
+      0.598,
+      0.473
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1103.388,
+      1706.612,
+      1153.542,
+      1761.172
+    ]
+  },
+  {
+    "tag": "TG-003",
+    "type": "instruments",
+    "description": "Temperature Gauge",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.556,
+      0.346,
+      0.582,
+      0.386
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1072.5240000000001,
+      1587.944,
+      1122.6779999999999,
+      1642.504
+    ]
+  },
+  {
+    "tag": "TG-004",
+    "type": "instruments",
+    "description": "Temperature Gauge",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.842,
+      0.346,
+      0.868,
+      0.386
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1624.2179999999998,
+      1587.944,
+      1674.372,
+      1642.504
+    ]
+  },
+  {
+    "tag": "TG-001",
+    "type": "instruments",
+    "description": "Temperature Gauge",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.275,
+      0.639,
+      0.301,
+      0.679
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      530.475,
+      1987.596,
+      580.629,
+      2042.156
+    ]
+  },
+  {
+    "tag": "TI-005",
+    "type": "instruments",
+    "description": "Temperature Indicator",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.85,
+      0.346,
+      0.876,
+      0.386
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1639.6499999999999,
+      1587.944,
+      1689.804,
+      1642.504
+    ]
+  },
+  {
+    "tag": "LS-004",
+    "type": "instruments",
+    "description": "Level Switch",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.772,
+      0.601,
+      0.798,
+      0.641
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1489.188,
+      1935.7640000000001,
+      1539.342,
+      1990.324
+    ]
+  },
+  {
+    "tag": "LI-001",
+    "type": "instruments",
+    "description": "Level Indicator",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.716,
+      0.698,
+      0.742,
+      0.738
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1381.164,
+      2068.072,
+      1431.318,
+      2122.632
+    ]
+  },
+  {
+    "tag": "TS-001",
+    "type": "instruments",
+    "description": "Temperature Switch",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.275,
+      0.679,
+      0.301,
+      0.719
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      530.475,
+      2042.156,
+      580.629,
+      2096.716
+    ]
+  },
+  {
+    "tag": "HS-001",
+    "type": "instruments",
+    "description": "High Switch",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.275,
+      0.745,
+      0.301,
+      0.785
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      530.475,
+      2132.18,
+      580.629,
+      2186.74
+    ]
+  },
+  {
+    "tag": "PD-004",
+    "type": "instruments",
+    "description": "Pressure Differential Indicator",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.894,
+      0.254,
+      0.92,
+      0.294
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1724.526,
+      1462.4560000000001,
+      1774.68,
+      1517.016
+    ]
+  },
+  {
+    "tag": "PDS-004",
+    "type": "instruments",
+    "description": "Pressure Differential Switch",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.894,
+      0.206,
+      0.92,
+      0.246
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1724.526,
+      1396.984,
+      1774.68,
+      1451.5439999999999
+    ]
+  },
+  {
+    "tag": "PDI-004",
+    "type": "instruments",
+    "description": "Pressure Differential Indicator",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.924,
+      0.254,
+      0.95,
+      0.294
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1782.3960000000002,
+      1462.4560000000001,
+      1832.55,
+      1517.016
+    ]
+  },
+  {
+    "tag": "DIP-STICK",
+    "type": "equipment",
+    "description": "Dip Stick",
+    "line_number": "",
+    "service": "Lube Oil",
+    "local_bbox": [
+      0.688,
+      0.617,
+      0.714,
+      0.658
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1327.1519999999998,
+      1957.588,
+      1377.306,
+      2013.5120000000002
+    ]
+  },
+  {
+    "tag": "MANWAY-01",
+    "type": "equipment",
+    "description": "Manway",
+    "line_number": "",
+    "service": "Tank Access",
+    "local_bbox": [
+      0.793,
+      0.617,
+      0.839,
+      0.658
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1529.6970000000001,
+      1957.588,
+      1618.431,
+      2013.5120000000002
+    ]
+  },
+  {
+    "tag": "MANWAY-02",
+    "type": "equipment",
+    "description": "Manway",
+    "line_number": "",
+    "service": "Tank Access",
+    "local_bbox": [
+      0.847,
+      0.617,
+      0.893,
+      0.658
+    ],
+    "tile_bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 2,
+    "global_bbox": [
+      1633.863,
+      1957.588,
+      1722.597,
+      2013.5120000000002
+    ]
+  },
+  {
+    "tag": "L-004",
+    "type": "instrument",
+    "description": "Level indicator/switch",
+    "local_bbox": [
+      0.007,
+      0.623,
+      0.038,
+      0.669
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1592.51,
+      1965.772,
+      1652.34,
+      2028.516
+    ]
+  },
+  {
+    "tag": "MANWAY",
+    "type": "equipment",
+    "description": "Manway access point",
+    "local_bbox": [
+      0.046,
+      0.623,
+      0.093,
+      0.669
+    ],
+    "service": "Oil Tank",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1667.78,
+      1965.772,
+      1758.49,
+      2028.516
+    ]
+  },
+  {
+    "tag": "TIC-005",
+    "type": "instrument",
+    "description": "Temperature Indicating Controller",
+    "local_bbox": [
+      0.058,
+      0.37,
+      0.088,
+      0.416
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1690.94,
+      1620.68,
+      1748.84,
+      1683.424
+    ]
+  },
+  {
+    "tag": "TG-004",
+    "type": "instrument",
+    "description": "Temperature Gauge",
+    "local_bbox": [
+      0.095,
+      0.37,
+      0.125,
+      0.416
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1762.35,
+      1620.68,
+      1820.25,
+      1683.424
+    ]
+  },
+  {
+    "tag": "PDS-004",
+    "type": "instrument",
+    "description": "Pressure Differential Switch",
+    "local_bbox": [
+      0.104,
+      0.268,
+      0.134,
+      0.314
+    ],
+    "service": "Filter",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1779.72,
+      1481.5520000000001,
+      1837.62,
+      1544.296
+    ]
+  },
+  {
+    "tag": "PD-004",
+    "type": "instrument",
+    "description": "Pressure Differential Indicator",
+    "local_bbox": [
+      0.104,
+      0.323,
+      0.134,
+      0.369
+    ],
+    "service": "Filter",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1779.72,
+      1556.5720000000001,
+      1837.62,
+      1619.316
+    ]
+  },
+  {
+    "tag": "PDJ-004",
+    "type": "instrument",
+    "description": "Pressure Differential Jumper/Transmitter",
+    "local_bbox": [
+      0.143,
+      0.323,
+      0.173,
+      0.369
+    ],
+    "service": "Filter",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1854.99,
+      1556.5720000000001,
+      1912.8899999999999,
+      1619.316
+    ]
+  },
+  {
+    "tag": "PDT-004",
+    "type": "instrument",
+    "description": "Pressure Differential Transmitter",
+    "local_bbox": [
+      0.214,
+      0.268,
+      0.244,
+      0.314
+    ],
+    "service": "Filter",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1992.02,
+      1481.5520000000001,
+      2049.92,
+      1544.296
+    ]
+  },
+  {
+    "tag": "FILTER-001",
+    "type": "equipment",
+    "description": "Oil Filter (Top)",
+    "local_bbox": [
+      0.204,
+      0.319,
+      0.254,
+      0.412
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1972.72,
+      1551.116,
+      2069.2200000000003,
+      1677.9679999999998
+    ]
+  },
+  {
+    "tag": "PCV-001",
+    "type": "valve",
+    "description": "Pressure Control Valve",
+    "local_bbox": [
+      0.155,
+      0.474,
+      0.185,
+      0.52
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1878.15,
+      1762.536,
+      1936.05,
+      1825.28
+    ]
+  },
+  {
+    "tag": "FILTER-002",
+    "type": "equipment",
+    "description": "Oil Filter (Bottom)",
+    "local_bbox": [
+      0.204,
+      0.525,
+      0.254,
+      0.618
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1972.72,
+      1832.1,
+      2069.2200000000003,
+      1958.952
+    ]
+  },
+  {
+    "tag": "PS-007",
+    "type": "instrument",
+    "description": "Pressure Switch",
+    "local_bbox": [
+      0.319,
+      0.525,
+      0.349,
+      0.571
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      2194.67,
+      1832.1,
+      2252.5699999999997,
+      1894.844
+    ]
+  },
+  {
+    "tag": "PSV-005",
+    "type": "valve",
+    "description": "Pressure Safety Valve",
+    "local_bbox": [
+      0.382,
+      0.395,
+      0.412,
+      0.441
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      2316.26,
+      1654.78,
+      2374.16,
+      1717.524
+    ]
+  },
+  {
+    "tag": "TANK-001",
+    "type": "equipment",
+    "description": "Lube and Seal Oil Tank",
+    "local_bbox": [
+      0.0,
+      0.669,
+      0.75,
+      0.88
+    ],
+    "service": "Oil",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      1579.0,
+      2028.516,
+      3026.5,
+      2316.3199999999997
+    ]
+  },
+  {
+    "tag": "TS-002",
+    "type": "instrument",
+    "description": "Temperature Switch",
+    "local_bbox": [
+      0.435,
+      0.724,
+      0.465,
+      0.77
+    ],
+    "service": "Tank",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      2418.55,
+      2103.536,
+      2476.45,
+      2166.2799999999997
+    ]
+  },
+  {
+    "tag": "HEATER-002",
+    "type": "equipment",
+    "description": "Tank Heater",
+    "local_bbox": [
+      0.435,
+      0.77,
+      0.465,
+      0.816
+    ],
+    "service": "Tank",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      2418.55,
+      2166.2799999999997,
+      2476.45,
+      2229.024
+    ]
+  },
+  {
+    "tag": "XL-002",
+    "type": "instrument",
+    "description": "Heater Local Indicator/Lamp",
+    "local_bbox": [
+      0.535,
+      0.816,
+      0.565,
+      0.862
+    ],
+    "service": "Heater",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      2611.55,
+      2229.024,
+      2669.45,
+      2291.768
+    ]
+  },
+  {
+    "tag": "HS-002",
+    "type": "instrument",
+    "description": "Heater Switch",
+    "local_bbox": [
+      0.575,
+      0.816,
+      0.605,
+      0.862
+    ],
+    "service": "Heater",
+    "tile_bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "depth": 0,
+    "tile_id": 3,
+    "global_bbox": [
+      2688.75,
+      2229.024,
+      2746.6499999999996,
+      2291.768
+    ]
+  }
+]

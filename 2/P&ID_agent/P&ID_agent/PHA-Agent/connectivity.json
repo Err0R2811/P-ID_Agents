@@ -1,0 +1,676 @@
+{
+  "nodes": [
+    {
+      "id": "TK-001",
+      "type": "equipment",
+      "subtype": "tank",
+      "name": "Lube and Seal Oil Tank"
+    },
+    {
+      "id": "P-01",
+      "type": "equipment",
+      "subtype": "pump",
+      "name": "Lube Oil Pump 1",
+      "redundancy_group": "pumps"
+    },
+    {
+      "id": "P-02",
+      "type": "equipment",
+      "subtype": "pump",
+      "name": "Lube Oil Pump 2",
+      "redundancy_group": "pumps"
+    },
+    {
+      "id": "AIR-COOLER",
+      "type": "equipment",
+      "subtype": "cooler",
+      "name": "Air Cooler"
+    },
+    {
+      "id": "E-001",
+      "type": "equipment",
+      "subtype": "filter",
+      "name": "Oil Filter 1",
+      "redundancy_group": "filters"
+    },
+    {
+      "id": "E-002",
+      "type": "equipment",
+      "subtype": "filter",
+      "name": "Oil Filter 2",
+      "redundancy_group": "filters"
+    },
+    {
+      "id": "K-01",
+      "type": "equipment",
+      "subtype": "compressor",
+      "name": "Compressor K-01"
+    },
+    {
+      "id": "XL-001",
+      "type": "equipment",
+      "subtype": "heater",
+      "name": "Tank Heater 1",
+      "redundancy_group": "heaters"
+    },
+    {
+      "id": "XL-002",
+      "type": "equipment",
+      "subtype": "heater",
+      "name": "Tank Heater 2",
+      "redundancy_group": "heaters"
+    },
+    {
+      "id": "TCV-005",
+      "type": "valve",
+      "subtype": "temperature_control_valve",
+      "name": "Temperature Control Valve"
+    },
+    {
+      "id": "PCV-001",
+      "type": "valve",
+      "subtype": "pressure_control_valve",
+      "name": "Recirculation Control Valve"
+    },
+    {
+      "id": "PCV-002",
+      "type": "valve",
+      "subtype": "pressure_control_valve",
+      "name": "Bypass Relief Valve",
+      "redundancy_group": "relief"
+    },
+    {
+      "id": "PZV-001",
+      "type": "valve",
+      "subtype": "relief_valve",
+      "name": "P-01 Discharge Relief",
+      "redundancy_group": "relief"
+    },
+    {
+      "id": "PZV-002",
+      "type": "valve",
+      "subtype": "relief_valve",
+      "name": "P-02 Discharge Relief",
+      "redundancy_group": "relief"
+    },
+    {
+      "id": "PSV-005",
+      "type": "valve",
+      "subtype": "safety_relief_valve",
+      "name": "Tank Safety Relief",
+      "redundancy_group": "relief"
+    },
+    {
+      "id": "CV-001",
+      "type": "valve",
+      "subtype": "check_valve",
+      "name": "P-01 Check Valve"
+    },
+    {
+      "id": "CV-002",
+      "type": "valve",
+      "subtype": "check_valve",
+      "name": "P-02 Check Valve"
+    },
+    {
+      "id": "PI-001",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "P-01 Suction Pressure Indicator"
+    },
+    {
+      "id": "PG-001",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "P-01 Discharge Pressure Gauge"
+    },
+    {
+      "id": "PI-005",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "P-02 Suction Pressure Indicator"
+    },
+    {
+      "id": "PG-005",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "P-02 Discharge Pressure Gauge"
+    },
+    {
+      "id": "PDT-004",
+      "type": "instrument",
+      "measures": "differential_pressure",
+      "name": "Filter DP Transmitter"
+    },
+    {
+      "id": "PDI-004",
+      "type": "instrument",
+      "measures": "differential_pressure",
+      "name": "Filter DP Indicator"
+    },
+    {
+      "id": "PDS-004",
+      "type": "instrument",
+      "measures": "differential_pressure",
+      "name": "Filter DP Switch/Alarm"
+    },
+    {
+      "id": "PD-004",
+      "type": "instrument",
+      "measures": "differential_pressure",
+      "name": "Filter Pressure Drop Indicator"
+    },
+    {
+      "id": "PS-007",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "Filter Protection Pressure Switch"
+    },
+    {
+      "id": "PS-006",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "Filter Low Pressure Switch"
+    },
+    {
+      "id": "PSV-001",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "P-01 Pressure Switch Valve"
+    },
+    {
+      "id": "PSV-002",
+      "type": "instrument",
+      "measures": "pressure",
+      "name": "P-02 Pressure Switch Valve"
+    },
+    {
+      "id": "TG-001",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "Tank Temperature Gauge"
+    },
+    {
+      "id": "TG-003",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "Air Cooler Outlet Temperature Gauge"
+    },
+    {
+      "id": "TG-004",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "TCV Reference Temperature Gauge"
+    },
+    {
+      "id": "TT-001",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "Tank Temperature Transmitter"
+    },
+    {
+      "id": "TT-002",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "Heater Temperature Transmitter"
+    },
+    {
+      "id": "TS-001",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "Heater 1 Temperature Switch"
+    },
+    {
+      "id": "TS-002",
+      "type": "instrument",
+      "measures": "temperature",
+      "name": "Heater 2 Temperature Switch"
+    },
+    {
+      "id": "LG-001",
+      "type": "instrument",
+      "measures": "level",
+      "name": "Level Glass Gauge"
+    },
+    {
+      "id": "LS-004",
+      "type": "instrument",
+      "measures": "level",
+      "name": "Level Switch"
+    },
+    {
+      "id": "L-004",
+      "type": "instrument",
+      "measures": "level",
+      "name": "Local Level Alarm Light"
+    },
+    {
+      "id": "LI-001",
+      "type": "instrument",
+      "measures": "level",
+      "name": "Level Indicator"
+    },
+    {
+      "id": "DIP-STICK",
+      "type": "instrument",
+      "measures": "level",
+      "name": "Manual Dip Stick"
+    },
+    {
+      "id": "TIC-005",
+      "type": "controller",
+      "measures": "temperature",
+      "name": "Temperature Indicating Controller"
+    },
+    {
+      "id": "HS-001",
+      "type": "instrument",
+      "measures": "manual",
+      "name": "Heater 1 Hand Switch"
+    },
+    {
+      "id": "HS-002",
+      "type": "instrument",
+      "measures": "manual",
+      "name": "Heater 2 Hand Switch"
+    },
+    {
+      "id": "XS-001",
+      "type": "instrument",
+      "measures": "manual",
+      "name": "Heater Safety Interlock"
+    },
+    {
+      "id": "FI-001",
+      "type": "instrument",
+      "measures": "flow",
+      "name": "Tank Oil Flow Indicator"
+    },
+    {
+      "id": "FI-002",
+      "type": "instrument",
+      "measures": "flow",
+      "name": "Heater Flow Indicator"
+    }
+  ],
+  "edges": [
+    {
+      "source": "TK-001",
+      "target": "P-01",
+      "type": "process",
+      "role": "suction"
+    },
+    {
+      "source": "TK-001",
+      "target": "P-02",
+      "type": "process",
+      "role": "suction"
+    },
+    {
+      "source": "P-01",
+      "target": "AIR-COOLER",
+      "type": "process",
+      "role": "discharge"
+    },
+    {
+      "source": "P-02",
+      "target": "AIR-COOLER",
+      "type": "process",
+      "role": "discharge"
+    },
+    {
+      "source": "AIR-COOLER",
+      "target": "TCV-005",
+      "type": "process",
+      "role": "cooled_oil"
+    },
+    {
+      "source": "TCV-005",
+      "target": "E-001",
+      "type": "process",
+      "role": "supply"
+    },
+    {
+      "source": "TCV-005",
+      "target": "E-002",
+      "type": "process",
+      "role": "supply"
+    },
+    {
+      "source": "E-001",
+      "target": "K-01",
+      "type": "process",
+      "role": "lubrication_supply"
+    },
+    {
+      "source": "E-002",
+      "target": "K-01",
+      "type": "process",
+      "role": "lubrication_supply"
+    },
+    {
+      "source": "E-001",
+      "target": "PCV-001",
+      "type": "process",
+      "role": "recirculation"
+    },
+    {
+      "source": "E-002",
+      "target": "PCV-001",
+      "type": "process",
+      "role": "recirculation"
+    },
+    {
+      "source": "PCV-001",
+      "target": "TK-001",
+      "type": "process",
+      "role": "return"
+    },
+    {
+      "source": "P-01",
+      "target": "CV-001",
+      "type": "process",
+      "role": "inline_check"
+    },
+    {
+      "source": "P-02",
+      "target": "CV-002",
+      "type": "process",
+      "role": "inline_check"
+    },
+    {
+      "source": "P-01",
+      "target": "PZV-001",
+      "type": "process",
+      "role": "discharge_relief"
+    },
+    {
+      "source": "P-02",
+      "target": "PZV-002",
+      "type": "process",
+      "role": "discharge_relief"
+    },
+    {
+      "source": "PZV-001",
+      "target": "TK-001",
+      "type": "process",
+      "role": "relief_return"
+    },
+    {
+      "source": "PZV-002",
+      "target": "TK-001",
+      "type": "process",
+      "role": "relief_return"
+    },
+    {
+      "source": "AIR-COOLER",
+      "target": "PCV-002",
+      "type": "process",
+      "role": "bypass"
+    },
+    {
+      "source": "PCV-002",
+      "target": "TK-001",
+      "type": "process",
+      "role": "bypass_return"
+    },
+    {
+      "source": "PSV-005",
+      "target": "TK-001",
+      "type": "process",
+      "role": "safety_relief"
+    },
+    {
+      "source": "TK-001",
+      "target": "XL-001",
+      "type": "process",
+      "role": "heating"
+    },
+    {
+      "source": "TK-001",
+      "target": "XL-002",
+      "type": "process",
+      "role": "heating"
+    },
+    {
+      "source": "XL-001",
+      "target": "TK-001",
+      "type": "process",
+      "role": "heated_return"
+    },
+    {
+      "source": "XL-002",
+      "target": "TK-001",
+      "type": "process",
+      "role": "heated_return"
+    },
+    {
+      "source": "TG-004",
+      "target": "TIC-005",
+      "type": "signal",
+      "role": "measurement"
+    },
+    {
+      "source": "TIC-005",
+      "target": "TCV-005",
+      "type": "signal",
+      "role": "control"
+    },
+    {
+      "source": "TS-001",
+      "target": "XL-001",
+      "type": "signal",
+      "role": "control"
+    },
+    {
+      "source": "HS-001",
+      "target": "XL-001",
+      "type": "signal",
+      "role": "manual_control"
+    },
+    {
+      "source": "XS-001",
+      "target": "XL-001",
+      "type": "signal",
+      "role": "safety_interlock"
+    },
+    {
+      "source": "TS-002",
+      "target": "XL-002",
+      "type": "signal",
+      "role": "control"
+    },
+    {
+      "source": "HS-002",
+      "target": "XL-002",
+      "type": "signal",
+      "role": "manual_control"
+    },
+    {
+      "source": "LG-001",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "LS-004",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "L-004",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "LI-001",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "DIP-STICK",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "TG-001",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "TT-001",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "FI-001",
+      "target": "TK-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PI-001",
+      "target": "P-01",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PG-001",
+      "target": "P-01",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PSV-001",
+      "target": "P-01",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PI-005",
+      "target": "P-02",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PG-005",
+      "target": "P-02",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PSV-002",
+      "target": "P-02",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "TG-003",
+      "target": "AIR-COOLER",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PDT-004",
+      "target": "E-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PDT-004",
+      "target": "E-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PDI-004",
+      "target": "E-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PDI-004",
+      "target": "E-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PDS-004",
+      "target": "E-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PDS-004",
+      "target": "E-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PD-004",
+      "target": "E-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PD-004",
+      "target": "E-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PS-007",
+      "target": "E-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PS-007",
+      "target": "E-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PS-006",
+      "target": "E-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "PS-006",
+      "target": "E-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "TT-002",
+      "target": "XL-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "TT-002",
+      "target": "XL-002",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "FI-002",
+      "target": "XL-001",
+      "type": "signal",
+      "role": "monitors"
+    },
+    {
+      "source": "FI-002",
+      "target": "XL-002",
+      "type": "signal",
+      "role": "monitors"
+    }
+  ]
+}

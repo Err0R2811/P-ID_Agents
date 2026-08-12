@@ -1,0 +1,677 @@
+// llm_outputs.json
+
+[
+  {
+    "tile_id": 0,
+    "depth": 0,
+    "bbox": [
+      0,
+      0,
+      1929,
+      1364
+    ],
+    "status": "complete",
+    "estimated_missing_items": 0,
+    "reason": "Only partial equipment labels are visible on the right side of the image.",
+    "items": [
+      {
+        "tag": "",
+        "type": "Equipment",
+        "description": "Compressor (Partial label visible)",
+        "line_number": "",
+        "service": "",
+        "tile_bbox": [
+          0,
+          0,
+          1929,
+          1364
+        ],
+        "depth": 0,
+        "tile_id": 0
+      }
+    ]
+  },
+  {
+    "tile_id": 1,
+    "depth": 0,
+    "bbox": [
+      1579,
+      0,
+      3509,
+      1364
+    ],
+    "status": "complete",
+    "estimated_missing_items": 0,
+    "reason": "All readable items have been extracted.",
+    "items": [
+      {
+        "tag": "K-01",
+        "type": "Equipment",
+        "description": "Compressor",
+        "tile_bbox": [
+          1579,
+          0,
+          3509,
+          1364
+        ],
+        "depth": 0,
+        "tile_id": 1
+      }
+    ]
+  },
+  {
+    "tile_id": 2,
+    "depth": 0,
+    "bbox": [
+      0,
+      1116,
+      1929,
+      2480
+    ],
+    "status": "complete",
+    "estimated_missing_items": 0,
+    "reason": "All readable equipment, valves, instruments, and lines have been extracted.",
+    "items": [
+      {
+        "tag": "P-01",
+        "type": "equipment",
+        "description": "Lube Oil Pump",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "P-02",
+        "type": "equipment",
+        "description": "Lube Oil Pump",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "AIR COOLER",
+        "type": "equipment",
+        "description": "Air Cooler",
+        "service": "Lube Oil / Air",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "HEATER",
+        "type": "equipment",
+        "description": "Heater",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PZV 001",
+        "type": "valve",
+        "description": "Pressure Safety Valve",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PZV 002",
+        "type": "valve",
+        "description": "Pressure Safety Valve",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PCV 002",
+        "type": "valve",
+        "description": "Pressure Control Valve",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "TCV 005",
+        "type": "valve",
+        "description": "Temperature Control Valve",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PG 001",
+        "type": "instrument",
+        "description": "Pressure Gauge",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PG 005",
+        "type": "instrument",
+        "description": "Pressure Gauge",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "TG 003",
+        "type": "instrument",
+        "description": "Temperature Gauge",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "TIC 005",
+        "type": "instrument",
+        "description": "Temperature Indicator Controller",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PDS 004",
+        "type": "instrument",
+        "description": "Differential Pressure Switch",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PD 004",
+        "type": "instrument",
+        "description": "Differential Pressure Indicator",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PDI 004",
+        "type": "instrument",
+        "description": "Differential Pressure Indicator",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "LS 004",
+        "type": "instrument",
+        "description": "Level Switch",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "L 004",
+        "type": "instrument",
+        "description": "Level Indicator",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "LG 001",
+        "type": "instrument",
+        "description": "Level Gauge",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "TG 001",
+        "type": "instrument",
+        "description": "Temperature Gauge",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "TS 001",
+        "type": "instrument",
+        "description": "Temperature Switch",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "XL 001",
+        "type": "instrument",
+        "description": "Heater On Light",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "HS 001",
+        "type": "instrument",
+        "description": "Heater Status/Signal",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "PCV 001",
+        "type": "valve",
+        "description": "Pressure Control Valve",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "TO TANK",
+        "type": "line",
+        "description": "Return Line",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "DIP STICK",
+        "type": "equipment",
+        "description": "Dipstick",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      },
+      {
+        "tag": "MANWAY",
+        "type": "equipment",
+        "description": "Manway",
+        "service": "Lube Oil",
+        "tile_bbox": [
+          0,
+          1116,
+          1929,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 2
+      }
+    ]
+  },
+  {
+    "tile_id": 3,
+    "depth": 0,
+    "bbox": [
+      1579,
+      1116,
+      3509,
+      2480
+    ],
+    "status": "complete",
+    "estimated_missing_items": 0,
+    "reason": "",
+    "items": [
+      {
+        "tag": "L-004",
+        "type": "instrument",
+        "description": "Level Switch / Indicator",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "TIC-005",
+        "type": "instrument",
+        "description": "Temperature Indicating Controller",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "TG-004",
+        "type": "instrument",
+        "description": "Temperature Gauge",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PDS-004",
+        "type": "instrument",
+        "description": "Pressure Differential Switch",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PD-004",
+        "type": "instrument",
+        "description": "Pressure Differential Indicator",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PDI-004",
+        "type": "instrument",
+        "description": "Pressure Differential Indicator",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PDT-004",
+        "type": "instrument",
+        "description": "Pressure Differential Transmitter",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "OIL FILTER",
+        "type": "equipment",
+        "description": "Filter Vessel",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PSV-005",
+        "type": "valve",
+        "description": "Pressure Safety Valve",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PS-007",
+        "type": "instrument",
+        "description": "Pressure Switch",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "PCV-001",
+        "type": "valve",
+        "description": "Pressure Control Valve",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "TS-002",
+        "type": "instrument",
+        "description": "Temperature Switch",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "XL-002",
+        "type": "instrument",
+        "description": "Heater Element",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "HS-002",
+        "type": "instrument",
+        "description": "Heater Status / Switch",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "HEATER",
+        "type": "equipment",
+        "description": "Tank Heater",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "MANWAY",
+        "type": "equipment",
+        "description": "Tank Manway",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      },
+      {
+        "tag": "LUBE AND SEAL OIL TANK",
+        "type": "equipment",
+        "description": "Storage Tank",
+        "tile_bbox": [
+          1579,
+          1116,
+          3509,
+          2480
+        ],
+        "depth": 0,
+        "tile_id": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lube Oil System — P&ID Flowchart</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #212121;
+    --panel: #ffffff;
+    --border: #e0e0e0;
+    --accent: #1565c0;
+    --hover: #e3f2fd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e0e0e0;
+      --panel: #1e1e1e;
+      --border: #333333;
+      --accent: #42a5f5;
+      --hover: #1a3a5c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  .header {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header .meta {
+    font-size: 12px;
+    color: #757575;
+  }
+  .main {
+    display: flex;
+    height: calc(100vh - 60px);
+  }
+  .diagram-container {
+    flex: 1;
+    overflow: auto;
+    padding: 16px;
+    position: relative;
+  }
+  .diagram-wrapper {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    display: inline-block;
+    min-width: 100%;
+  }
+  .sidebar {
+    width: 320px;
+    border-left: 1px solid var(--border);
+    background: var(--panel);
+    padding: 16px;
+    overflow-y: auto;
+  }
+  .sidebar h3 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .node-info {
+    display: none;
+  }
+  .node-info.active {
+    display: block;
+  }
+  .info-row {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #757575;
+    margin-bottom: 2px;
+  }
+  .info-value {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .connections-list {
+    margin-top: 8px;
+  }
+  .connection-item {
+    padding: 6px 8px;
+    background: var(--bg);
+    border-radius: 4px;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .connection-item .dir {
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .legend-panel {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .legend-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 8px;
+    border: 1.5px solid;
+    flex-shrink: 0;
+  }
+  .node {
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .node:hover {
+    opacity: 0.85;
+  }
+  .node.highlighted circle,
+  .node.highlighted rect,
+  .node.highlighted polygon {
+    filter: drop-shadow(0 0 4px var(--accent));
+    stroke-width: 3 !important;
+  }
+  .search-box {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 13px;
+    background: var(--bg);
+    color: var(--fg);
+    margin-bottom: 12px;
+  }
+  .search-box:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .default-msg {
+    color: #757575;
+    font-size: 13px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    padding: 10px;
+    background: var(--bg);
+    border-radius: 6px;
+    text-align: center;
+  }
+  .stat-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .stat-label {
+    font-size: 11px;
+    color: #757575;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Lube Oil System — P&ID Interactive Flowchart</h1>
+  <span class="meta">47 components · 63 connections · Click any symbol for details</span>
+</div>
+<div class="main">
+  <div class="diagram-container">
+    <div class="diagram-wrapper">
+      <svg id="pid-svg" width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+        <!-- SVG content will be injected here -->
+      </svg>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="stats">
+      <div class="stat-card"><div class="stat-value">47</div><div class="stat-label">Components</div></div>
+      <div class="stat-card"><div class="stat-value">63</div><div class="stat-label">Connections</div></div>
+    </div>
+
+    <input type="text" class="search-box" id="searchBox" placeholder="Search tag (e.g., TCV-005)..." onkeyup="searchNode()">
+
+    <div id="defaultMsg" class="default-msg">Click any symbol in the diagram to view details</div>
+
+    <div id="nodeInfo" class="node-info">
+      <h3 id="infoTitle">Component Details</h3>
+      <div class="info-row">
+        <div class="info-label">Tag</div>
+        <div class="info-value" id="infoTag">-</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Type</div>
+        <div class="info-value" id="infoType">-</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Subtype</div>
+        <div class="info-value" id="infoSubtype">-</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Description</div>
+        <div class="info-value" id="infoDesc">-</div>
+      </div>
+      <div class="info-row" id="infoMeasuresRow" style="display:none">
+        <div class="info-label">Measures</div>
+        <div class="info-value" id="infoMeasures">-</div>
+      </div>
+      <div class="info-row" id="infoRedundancyRow" style="display:none">
+        <div class="info-label">Redundancy</div>
+        <div class="info-value" id="infoRedundancy">-</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Connections</div>
+        <div class="connections-list" id="infoConnections">-</div>
+      </div>
+    </div>
+
+    <div class="legend-panel">
+      <h3>Legend</h3>
+      <div class="legend-item"><span class="legend-swatch" style="background:#e3f2fd;border-color:#1565c0"></span>Equipment</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#fff3e0;border-color:#ef6c00"></span>Valve</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#fce4ec;border-color:#c2185b"></span>Instrument</div>
+      <div class="legend-item"><span class="legend-swatch" style="background:#f3e5f5;border-color:#7b1fa2"></span>Controller</div>
+      <div class="legend-item" style="margin-top:12px"><span style="display:inline-block;width:20px;height:3px;background:#37474f;margin-right:8px"></span>Process line</div>
+      <div class="legend-item"><span style="display:inline-block;width:20px;height:2px;background:#d32f2f;margin-right:8px;border-top:2px dashed #d32f2f"></span>Signal line</div>
+      <div class="legend-item"><span style="display:inline-block;width:20px;height:2px;background:#7f8c8d;margin-right:8px"></span>Relief/bypass</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Component database
+const components = {
+  "TK-001": {type:"equipment", subtype:"tank", name:"Lube and Seal Oil Tank", redundancy:"", measures:""},
+  "P-01": {type:"equipment", subtype:"pump", name:"Lube Oil Pump 1", redundancy:"pumps", measures:""},
+  "P-02": {type:"equipment", subtype:"pump", name:"Lube Oil Pump 2", redundancy:"pumps", measures:""},
+  "AIR-COOLER": {type:"equipment", subtype:"cooler", name:"Air Cooler", redundancy:"", measures:""},
+  "E-001": {type:"equipment", subtype:"filter", name:"Oil Filter 1", redundancy:"filters", measures:""},
+  "E-002": {type:"equipment", subtype:"filter", name:"Oil Filter 2", redundancy:"filters", measures:""},
+  "K-01": {type:"equipment", subtype:"compressor", name:"Compressor K-01", redundancy:"", measures:""},
+  "XL-001": {type:"equipment", subtype:"heater", name:"Tank Heater 1", redundancy:"heaters", measures:""},
+  "XL-002": {type:"equipment", subtype:"heater", name:"Tank Heater 2", redundancy:"heaters", measures:""},
+  "TCV-005": {type:"valve", subtype:"temperature_control_valve", name:"Temperature Control Valve", redundancy:"", measures:""},
+  "PCV-001": {type:"valve", subtype:"pressure_control_valve", name:"Recirculation Control Valve", redundancy:"", measures:""},
+  "PCV-002": {type:"valve", subtype:"pressure_control_valve", name:"Bypass Relief Valve", redundancy:"relief", measures:""},
+  "PZV-001": {type:"valve", subtype:"relief_valve", name:"P-01 Discharge Relief", redundancy:"relief", measures:""},
+  "PZV-002": {type:"valve", subtype:"relief_valve", name:"P-02 Discharge Relief", redundancy:"relief", measures:""},
+  "PSV-005": {type:"valve", subtype:"safety_relief_valve", name:"Tank Safety Relief", redundancy:"relief", measures:""},
+  "CV-001": {type:"valve", subtype:"check_valve", name:"P-01 Check Valve", redundancy:"", measures:""},
+  "CV-002": {type:"valve", subtype:"check_valve", name:"P-02 Check Valve", redundancy:"", measures:""},
+  "TG-001": {type:"instrument", subtype:"temperature_gauge", name:"Tank Temperature Gauge", redundancy:"", measures:"temperature"},
+  "TG-003": {type:"instrument", subtype:"temperature_gauge", name:"Air Cooler Outlet Temp Gauge", redundancy:"", measures:"temperature"},
+  "TG-004": {type:"instrument", subtype:"temperature_gauge", name:"TCV Reference Temp Gauge", redundancy:"", measures:"temperature"},
+  "TIC-005": {type:"controller", subtype:"temperature_controller", name:"Temperature Indicating Controller", redundancy:"", measures:"temperature"},
+  "TS-001": {type:"instrument", subtype:"temperature_switch", name:"Heater 1 Temp Switch", redundancy:"", measures:"temperature"},
+  "TS-002": {type:"instrument", subtype:"temperature_switch", name:"Heater 2 Temp Switch", redundancy:"", measures:"temperature"},
+  "HS-001": {type:"instrument", subtype:"hand_switch", name:"Heater 1 Hand Switch", redundancy:"", measures:"manual"},
+  "HS-002": {type:"instrument", subtype:"hand_switch", name:"Heater 2 Hand Switch", redundancy:"", measures:"manual"},
+  "PI-001": {type:"instrument", subtype:"pressure_indicator", name:"P-01 Suction Pressure", redundancy:"", measures:"pressure"},
+  "PG-001": {type:"instrument", subtype:"pressure_gauge", name:"P-01 Discharge Pressure", redundancy:"", measures:"pressure"},
+  "PI-005": {type:"instrument", subtype:"pressure_indicator", name:"P-02 Suction Pressure", redundancy:"", measures:"pressure"},
+  "PG-005": {type:"instrument", subtype:"pressure_gauge", name:"P-02 Discharge Pressure", redundancy:"", measures:"pressure"},
+  "PDT-004": {type:"instrument", subtype:"dp_transmitter", name:"Filter DP Transmitter", redundancy:"", measures:"differential_pressure"},
+  "PDI-004": {type:"instrument", subtype:"dp_indicator", name:"Filter DP Indicator", redundancy:"", measures:"differential_pressure"},
+  "PDS-004": {type:"instrument", subtype:"dp_switch", name:"Filter DP Switch/Alarm", redundancy:"", measures:"differential_pressure"},
+  "PD-004": {type:"instrument", subtype:"dp_indicator", name:"Filter Pressure Drop", redundancy:"", measures:"differential_pressure"},
+  "PS-007": {type:"instrument", subtype:"pressure_switch", name:"Filter Protection Switch", redundancy:"", measures:"pressure"},
+  "PS-006": {type:"instrument", subtype:"pressure_switch", name:"Low Pressure Switch", redundancy:"", measures:"pressure"},
+  "LG-001": {type:"instrument", subtype:"level_gauge", name:"Level Glass Gauge", redundancy:"", measures:"level"},
+  "LS-004": {type:"instrument", subtype:"level_switch", name:"Level Switch", redundancy:"", measures:"level"},
+  "L-004": {type:"instrument", subtype:"level_alarm", name:"Local Level Alarm Light", redundancy:"", measures:"level"},
+  "DIP-STICK": {type:"instrument", subtype:"manual", name:"Manual Dip Stick", redundancy:"", measures:"level"},
+};
+
+const connections = [
+  {source:"TK-001", target:"P-01", type:"process", role:"suction"},
+  {source:"TK-001", target:"P-02", type:"process", role:"suction"},
+  {source:"P-01", target:"AIR-COOLER", type:"process", role:"discharge"},
+  {source:"P-02", target:"AIR-COOLER", type:"process", role:"discharge"},
+  {source:"AIR-COOLER", target:"TCV-005", type:"process", role:"cooled_oil"},
+  {source:"TCV-005", target:"E-001", type:"process", role:"supply"},
+  {source:"TCV-005", target:"E-002", type:"process", role:"supply"},
+  {source:"E-001", target:"K-01", type:"process", role:"lubrication_supply"},
+  {source:"E-002", target:"K-01", type:"process", role:"lubrication_supply"},
+  {source:"E-001", target:"PCV-001", type:"process", role:"recirculation"},
+  {source:"E-002", target:"PCV-001", type:"process", role:"recirculation"},
+  {source:"PCV-001", target:"TK-001", type:"process", role:"return"},
+  {source:"P-01", target:"CV-001", type:"process", role:"inline_check"},
+  {source:"P-02", target:"CV-002", type:"process", role:"inline_check"},
+  {source:"P-01", target:"PZV-001", type:"process", role:"discharge_relief"},
+  {source:"P-02", target:"PZV-002", type:"process", role:"discharge_relief"},
+  {source:"PZV-001", target:"TK-001", type:"process", role:"relief_return"},
+  {source:"PZV-002", target:"TK-001", type:"process", role:"relief_return"},
+  {source:"PCV-002", target:"TK-001", type:"process", role:"bypass_return"},
+  {source:"PSV-005", target:"TK-001", type:"process", role:"safety_relief"},
+  {source:"TK-001", target:"XL-001", type:"process", role:"heating"},
+  {source:"TK-001", target:"XL-002", type:"process", role:"heating"},
+  {source:"TG-004", target:"TIC-005", type:"signal", role:"measurement"},
+  {source:"TIC-005", target:"TCV-005", type:"signal", role:"control"},
+  {source:"TS-001", target:"XL-001", type:"signal", role:"control"},
+  {source:"HS-001", target:"XL-001", type:"signal", role:"manual_control"},
+  {source:"TS-002", target:"XL-002", type:"signal", role:"control"},
+  {source:"HS-002", target:"XL-002", type:"signal", role:"manual_control"},
+  {source:"LG-001", target:"TK-001", type:"signal", role:"monitors"},
+  {source:"LS-004", target:"TK-001", type:"signal", role:"monitors"},
+  {source:"L-004", target:"TK-001", type:"signal", role:"monitors"},
+  {source:"DIP-STICK", target:"TK-001", type:"signal", role:"monitors"},
+  {source:"TG-001", target:"TK-001", type:"signal", role:"monitors"},
+  {source:"PI-001", target:"P-01", type:"signal", role:"monitors"},
+  {source:"PG-001", target:"P-01", type:"signal", role:"monitors"},
+  {source:"PI-005", target:"P-02", type:"signal", role:"monitors"},
+  {source:"PG-005", target:"P-02", type:"signal", role:"monitors"},
+  {source:"TG-003", target:"AIR-COOLER", type:"signal", role:"monitors"},
+  {source:"PDT-004", target:"E-001", type:"signal", role:"monitors"},
+  {source:"PDT-004", target:"E-002", type:"signal", role:"monitors"},
+  {source:"PDI-004", target:"E-001", type:"signal", role:"monitors"},
+  {source:"PDI-004", target:"E-002", type:"signal", role:"monitors"},
+  {source:"PDS-004", target:"E-001", type:"signal", role:"monitors"},
+  {source:"PDS-004", target:"E-002", type:"signal", role:"monitors"},
+  {source:"PD-004", target:"E-001", type:"signal", role:"monitors"},
+  {source:"PD-004", target:"E-002", type:"signal", role:"monitors"},
+  {source:"PS-007", target:"E-001", type:"signal", role:"monitors"},
+  {source:"PS-007", target:"E-002", type:"signal", role:"monitors"},
+  {source:"PS-006", target:"E-001", type:"signal", role:"monitors"},
+  {source:"PS-006", target:"E-002", type:"signal", role:"monitors"},
+];
+
+// Load SVG content
+fetch('flowchart.svg')
+  .then(r => r.text())
+  .then(svgText => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(svgText, 'image/svg+xml');
+    const svg = doc.querySelector('svg');
+    document.getElementById('pid-svg').innerHTML = svg.innerHTML;
+    setupInteractions();
+  })
+  .catch(() => {
+    document.getElementById('pid-svg').innerHTML = '<text x="700" y="450" text-anchor="middle" fill="#757575">Failed to load diagram. Ensure flowchart.svg is in the same directory.</text>';
+  });
+
+function setupInteractions() {
+  const nodes = document.querySelectorAll('.node');
+  nodes.forEach(node => {
+    node.addEventListener('click', () => {
+      const tag = node.getAttribute('data-id');
+      showNodeInfo(tag);
+      // Highlight
+      nodes.forEach(n => n.classList.remove('highlighted'));
+      node.classList.add('highlighted');
+    });
+  });
+}
+
+function showNodeInfo(tag) {
+  const comp = components[tag];
+  if (!comp) return;
+
+  document.getElementById('defaultMsg').style.display = 'none';
+  document.getElementById('nodeInfo').classList.add('active');
+
+  document.getElementById('infoTag').textContent = tag;
+  document.getElementById('infoType').textContent = comp.type;
+  document.getElementById('infoSubtype').textContent = comp.subtype.replace(/_/g, ' ');
+  document.getElementById('infoDesc').textContent = comp.name;
+
+  const measuresRow = document.getElementById('infoMeasuresRow');
+  if (comp.measures) {
+    measuresRow.style.display = 'block';
+    document.getElementById('infoMeasures').textContent = comp.measures;
+  } else {
+    measuresRow.style.display = 'none';
+  }
+
+  const redRow = document.getElementById('infoRedundancyRow');
+  if (comp.redundancy) {
+    redRow.style.display = 'block';
+    document.getElementById('infoRedundancy').textContent = comp.redundancy;
+  } else {
+    redRow.style.display = 'none';
+  }
+
+  // Find connections
+  const nodeConns = connections.filter(c => c.source === tag || c.target === tag);
+  const connList = document.getElementById('infoConnections');
+  connList.innerHTML = '';
+
+  if (nodeConns.length === 0) {
+    connList.innerHTML = '<div class="connection-item">No connections</div>';
+  } else {
+    nodeConns.forEach(c => {
+      const isSource = c.source === tag;
+      const other = isSource ? c.target : c.source;
+      const dir = isSource ? '→' : '←';
+      const typeLabel = c.type === 'signal' ? 'signal' : 'process';
+      const div = document.createElement('div');
+      div.className = 'connection-item';
+      div.innerHTML = `<span class="dir">${dir}</span> ${other} <span style="color:#757575">(${c.role.replace(/_/g,' ')})</span>`;
+      connList.appendChild(div);
+    });
+  }
+}
+
+function searchNode() {
+  const query = document.getElementById('searchBox').value.toUpperCase().trim();
+  if (!query) return;
+
+  const nodes = document.querySelectorAll('.node');
+  nodes.forEach(node => {
+    node.classList.remove('highlighted');
+    const tag = node.getAttribute('data-id');
+    if (tag && tag.toUpperCase().includes(query)) {
+      node.classList.add('highlighted');
+      showNodeInfo(tag);
+    }
+  });
+}
+</script>
+</body>
+</html>

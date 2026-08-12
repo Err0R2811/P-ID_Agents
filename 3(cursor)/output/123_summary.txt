@@ -1,0 +1,55 @@
+P&ID Extraction Summary — 123.pdf
+========================================
+Source: Agnes LLM (agnes-2.5-flash) + PyMuPDF text ground truth
+API: https://apihub.agnes-ai.com/v1
+Pages: 1
+
+EQUIPMENT (8)
+-------------
+  K-01              Compressor
+  P-01              Lube Oil Pump (primary)
+  P-02              Lube Oil Pump (standby)
+  (tank)            LUBE AND SEAL OIL TANK
+  HEATER 001        Oil Heater
+  HEATER 002        Oil Heater
+  AIR COOLER H-004  Lube Oil Cooler
+  OIL FILTER 007    Lube Oil Filter
+
+INSTRUMENTS (14)
+----------------
+  TIC-004           Temperature Indicating Controller
+  PDT-004           Pressure Differential Transmitter
+  PG-001            Pressure Gauge
+  PD-005            Pressure Differential Indicator
+  PDI               Pressure Differential Indicator
+  LG                Level Gauge
+  LS                Level Switch
+  PS                Pressure Switch
+  XL-001, XL-002    Limit Switches
+  HS-001            Hand Switch
+  PDS-003           Pressure Differential Switch
+  TG, TS            Temperature Gauge/Switch (UNCERTAIN — multiple instances)
+
+VALVES (6)
+----------
+  PCV-001, PCV-002  Pressure Control Valves
+  TCV-005           Temperature Control Valve
+  PZV-001/002/005   Pressure Safety/Relief Valves
+
+PROCESS CONNECTIONS (Agnes LLM)
+-------------------------------
+  Tank → P-01, P-02          (feed, conf 0.90-0.92)
+  P-01 → Air Cooler H-004    (flows_to, conf 0.85)
+  Cooler → Oil Filter 007    (flows_to, conf 0.82 — UNCERTAIN)
+  Filter → K-01              (feeds, conf 0.88)
+  K-01 → Tank (TO TANK)      (return, conf 0.90)
+  TIC-004 → TCV-005          (control loop)
+
+NOTES
+-----
+  - Dual pump redundancy (P-01 / P-02)
+  - Heaters 001/002 for temperature maintenance
+  - First LLM pass without text ground truth was discarded (hallucinated E-01, F-01, PI-101)
+  - Re-run with ground truth text produced validated tags
+
+UNCERTAIN: 3 items (TG, TS, cooler→filter edge)

@@ -1,0 +1,598 @@
+{
+  "nodes": [
+    {
+      "id": "SYS-001",
+      "type": "System Header",
+      "subtype": "",
+      "name": "Title text 'Lube Oil System'",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "SYS",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "EQP-001",
+      "type": "Equipment Label",
+      "subtype": "",
+      "name": "Partial label 'Compress' visible on the right side",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "EQP",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "K-01",
+      "type": "equipment",
+      "subtype": "compressor",
+      "name": "Compressor",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "K",
+      "isa_loop": "01",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "P-01",
+      "type": "equipment",
+      "subtype": "pump",
+      "name": "Lube Oil Pump",
+      "measures": "",
+      "redundancy_group": "pumps",
+      "isa_function": "P",
+      "isa_loop": "01",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Lube Oil",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "P-02",
+      "type": "equipment",
+      "subtype": "pump",
+      "name": "Lube Oil Pump",
+      "measures": "",
+      "redundancy_group": "pumps",
+      "isa_function": "P",
+      "isa_loop": "02",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Lube Oil",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "XV-001",
+      "type": "valves",
+      "subtype": "",
+      "name": "Heater Control Valve / Solenoid",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "XV",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Fuel/Steam",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TG-001",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Temperature Gauge",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "TG",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Lube Oil",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TS-001",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Temperature Switch",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "TS",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Lube Oil",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "HS-001",
+      "type": "instruments",
+      "subtype": "",
+      "name": "High Selector / Switch",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "HS",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Control",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PG-001",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Pressure Gauge",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PG",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Discharge",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PG-005",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Pressure Gauge",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PG",
+      "isa_loop": "005",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Discharge",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PZV-001",
+      "type": "valves",
+      "subtype": "",
+      "name": "Pressure Relief Valve / Check Valve",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PZV",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Discharge",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PZV-002",
+      "type": "valves",
+      "subtype": "",
+      "name": "Pressure Relief Valve / Check Valve",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PZV",
+      "isa_loop": "002",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Discharge",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PCV-002",
+      "type": "valves",
+      "subtype": "",
+      "name": "Pressure Control Valve",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PCV",
+      "isa_loop": "002",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Recycle/Bypass",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TG-003",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Temperature Gauge",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "TG",
+      "isa_loop": "003",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Suction/Header",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TCV-005",
+      "type": "valves",
+      "subtype": "",
+      "name": "Temperature Control Valve",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "TCV",
+      "isa_loop": "005",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Air Cooler Bypass",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TIC-005",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Temperature Indicator Controller",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "TIC",
+      "isa_loop": "005",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Outlet",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TG-004",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Temperature Gauge",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "TG",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Return Line",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PD-004",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Differential Pressure Indicator",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PD",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Filter/Pipe",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PDS-004",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Differential Pressure Switch",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PDS",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Filter/Pipe",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "LS-004",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Level Switch",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "LS",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Tank Level",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "L-004",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Level Indicator/Transmitter",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "L",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Tank Level",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "LG-001",
+      "type": "instruments",
+      "subtype": "",
+      "name": "Level Gauge",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "LG",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Tank Level",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "AIR COOLER",
+      "type": "equipment",
+      "subtype": "cooler",
+      "name": "Air Cooler Unit",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "EQUIP",
+      "isa_loop": "",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Lube Oil/Air",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "HEATER",
+      "type": "equipment",
+      "subtype": "heater",
+      "name": "Oil Heater",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "",
+      "isa_loop": "",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Lube Oil/Fuel",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "MANWAY",
+      "type": "equipment",
+      "subtype": "",
+      "name": "Manway Access Point",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "",
+      "isa_loop": "",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Tank",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "DIP STICK",
+      "type": "equipment",
+      "subtype": "",
+      "name": "Manual Level Dipstick",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "L",
+      "isa_loop": "",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Tank",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PCV-001",
+      "type": "valves",
+      "subtype": "",
+      "name": "Pressure Control Valve",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PCV",
+      "isa_loop": "001",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "Return/Supply",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PJ-004",
+      "type": "instrument",
+      "subtype": "pressure",
+      "name": "Pressure Differential Recorder/Junction",
+      "measures": "pressure",
+      "redundancy_group": "",
+      "isa_function": "PJ",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "OIL-FILTER",
+      "type": "equipment",
+      "subtype": "filter",
+      "name": "Top Oil Filter Vessel",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "",
+      "isa_loop": "",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PDT-004",
+      "type": "instrument",
+      "subtype": "differential_pressure",
+      "name": "Pressure Differential Transmitter",
+      "measures": "differential_pressure",
+      "redundancy_group": "",
+      "isa_function": "PDT",
+      "isa_loop": "004",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PS-007",
+      "type": "instrument",
+      "subtype": "pressure",
+      "name": "Pressure Switch",
+      "measures": "pressure",
+      "redundancy_group": "",
+      "isa_function": "PS",
+      "isa_loop": "007",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "PSV-005",
+      "type": "valve",
+      "subtype": "safety_relief_valve",
+      "name": "Pressure Safety Valve",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "PSV",
+      "isa_loop": "005",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "LUBE AND SEAL OIL TANK",
+      "type": "equipment",
+      "subtype": "tank",
+      "name": "Oil Storage Tank",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "",
+      "isa_loop": "",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "TS-002",
+      "type": "instrument",
+      "subtype": "temperature",
+      "name": "Temperature Sensor",
+      "measures": "temperature",
+      "redundancy_group": "",
+      "isa_function": "TS",
+      "isa_loop": "002",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "XL-002",
+      "type": "instrument",
+      "subtype": "",
+      "name": "Heater Status Light/Indicator",
+      "measures": "",
+      "redundancy_group": "",
+      "isa_function": "XL",
+      "isa_loop": "002",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    },
+    {
+      "id": "HS-002",
+      "type": "instrument",
+      "subtype": "",
+      "name": "Heater Switch",
+      "measures": "manual",
+      "redundancy_group": "",
+      "isa_function": "HS",
+      "isa_loop": "002",
+      "isa_suffix": "",
+      "properties": {
+        "line_number": "",
+        "service": "",
+        "confidence": 1.0
+      }
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

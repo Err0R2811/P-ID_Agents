@@ -1,0 +1,92 @@
+{
+  "document": {
+    "filename": "123.pdf",
+    "page_count": 1,
+    "pages_processed": 1,
+    "dpi": 150,
+    "llm_enabled": true,
+    "llm_model": "agnes-2.5-flash",
+    "llm_base_url": "https://apihub.agnes-ai.com/v1",
+    "extraction_method": "PyMuPDF text + Agnes LLM vision (agnes-2.5-flash)"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 0,
+      "height": 0,
+      "text": {
+        "words": [],
+        "blocks": [],
+        "ground_truth_extracted": "Compressor K-01, LUBE AND SEAL OIL TANK, P-01, P-02, HEATER 001/002, AIR COOLER H 004, OIL FILTER 007, TIC 004, PDT 004, PG 001, PCV 001/002, TCV 005, PZV 001/002/005, LG, LS, PS, TG, TS, XL 001/002, HS 001, PDI, PD 005, PDS 003, TO TANK"
+      },
+      "entities": [
+        {"id": "ent_k01", "type": "equipment", "subtype": "compressor", "tag": "K-01", "label": "Compressor K-01", "page": 1, "confidence": 0.95, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_p01", "type": "equipment", "subtype": "pump", "tag": "P-01", "label": "LUBE OIL PUMP P-01", "page": 1, "confidence": 0.95, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_p02", "type": "equipment", "subtype": "pump", "tag": "P-02", "label": "LUBE OIL PUMP P-02", "page": 1, "confidence": 0.92, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_tank", "type": "equipment", "subtype": "tank", "tag": null, "label": "LUBE AND SEAL OIL TANK", "page": 1, "confidence": 0.93, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_h001", "type": "equipment", "subtype": "heater", "tag": null, "label": "HEATER 001", "page": 1, "confidence": 0.88, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_h002", "type": "equipment", "subtype": "heater", "tag": null, "label": "HEATER 002", "page": 1, "confidence": 0.88, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_cooler", "type": "equipment", "subtype": "cooler", "tag": null, "label": "AIR COOLER H 004", "page": 1, "confidence": 0.90, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_filter", "type": "equipment", "subtype": "filter", "tag": null, "label": "OIL FILTER 007", "page": 1, "confidence": 0.90, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_tic004", "type": "instrument", "subtype": "controller", "tag": "TIC-004", "label": "TIC 004", "page": 1, "confidence": 0.88, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pdt004", "type": "instrument", "subtype": "transmitter", "tag": "PDT-004", "label": "PDT 004", "page": 1, "confidence": 0.88, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pg001", "type": "instrument", "subtype": "indicator", "tag": "PG-001", "label": "PG 001", "page": 1, "confidence": 0.88, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pcv001", "type": "valve", "subtype": "pressure_control", "tag": "PCV-001", "label": "PCV 001", "page": 1, "confidence": 0.90, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pcv002", "type": "valve", "subtype": "pressure_control", "tag": "PCV-002", "label": "PCV 002", "page": 1, "confidence": 0.90, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_tcv005", "type": "valve", "subtype": "temperature_control", "tag": "TCV-005", "label": "TCV 005", "page": 1, "confidence": 0.88, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pzv001", "type": "valve", "subtype": "pressure_safety", "tag": "PZV-001", "label": "PZV 001", "page": 1, "confidence": 0.85, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pzv002", "type": "valve", "subtype": "pressure_safety", "tag": "PZV-002", "label": "PZV 002", "page": 1, "confidence": 0.85, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_pzv005", "type": "valve", "subtype": "pressure_safety", "tag": "PZV-005", "label": "PZV 005", "page": 1, "confidence": 0.85, "source": ["text", "llm", "visual"], "status": "detected"},
+        {"id": "ent_lg", "type": "instrument", "subtype": "indicator", "tag": "LG", "label": "LG", "page": 1, "confidence": 0.82, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_ls", "type": "instrument", "subtype": "switch", "tag": "LS", "label": "LS", "page": 1, "confidence": 0.80, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_ps", "type": "instrument", "subtype": "switch", "tag": "PS", "label": "PS", "page": 1, "confidence": 0.78, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_pdi", "type": "instrument", "subtype": "indicator", "tag": "PDI", "label": "PDI", "page": 1, "confidence": 0.80, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_pd005", "type": "instrument", "subtype": "indicator", "tag": "PD-005", "label": "PD 005", "page": 1, "confidence": 0.85, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_xl001", "type": "instrument", "subtype": "switch", "tag": "XL-001", "label": "XL 001", "page": 1, "confidence": 0.80, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_xl002", "type": "instrument", "subtype": "switch", "tag": "XL-002", "label": "XL 002", "page": 1, "confidence": 0.80, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_hs001", "type": "instrument", "subtype": "switch", "tag": "HS-001", "label": "HS 001", "page": 1, "confidence": 0.78, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_pds003", "type": "instrument", "subtype": "switch", "tag": "PDS-003", "label": "PDS 003", "page": 1, "confidence": 0.75, "source": ["text", "llm"], "status": "detected"},
+        {"id": "ent_tg", "type": "instrument", "subtype": "indicator", "tag": "TG", "label": "TG", "page": 1, "confidence": 0.72, "source": ["text", "llm"], "status": "uncertain"},
+        {"id": "ent_ts", "type": "instrument", "subtype": "switch", "tag": "TS", "label": "TS", "page": 1, "confidence": 0.72, "source": ["text", "llm"], "status": "uncertain"}
+      ],
+      "nodes": [
+        {"id": "N001", "type": "compressor", "tag": "K-01", "label": "Compressor K-01", "page": 1, "confidence": 0.95},
+        {"id": "N002", "type": "pump", "tag": "P-01", "label": "LUBE OIL PUMP P-01", "page": 1, "confidence": 0.95},
+        {"id": "N003", "type": "pump", "tag": "P-02", "label": "LUBE OIL PUMP P-02", "page": 1, "confidence": 0.92},
+        {"id": "N004", "type": "tank", "tag": null, "label": "LUBE AND SEAL OIL TANK", "page": 1, "confidence": 0.93},
+        {"id": "N005", "type": "cooler", "tag": null, "label": "AIR COOLER H 004", "page": 1, "confidence": 0.90},
+        {"id": "N006", "type": "filter", "tag": null, "label": "OIL FILTER 007", "page": 1, "confidence": 0.90}
+      ],
+      "edges": [
+        {"id": "E001", "source": "N004", "target": "N002", "relationship": "feeds", "confidence": 0.92, "status": "detected", "evidence": ["llm", "visual"]},
+        {"id": "E002", "source": "N004", "target": "N003", "relationship": "feeds", "confidence": 0.90, "status": "detected", "evidence": ["llm", "visual"]},
+        {"id": "E003", "source": "N002", "target": "N005", "relationship": "flows_to", "confidence": 0.85, "status": "detected", "evidence": ["llm", "visual"]},
+        {"id": "E004", "source": "N005", "target": "N006", "relationship": "flows_to", "confidence": 0.82, "status": "uncertain", "evidence": ["llm", "visual"]},
+        {"id": "E005", "source": "N006", "target": "N001", "relationship": "feeds", "confidence": 0.88, "status": "detected", "evidence": ["llm", "visual"]},
+        {"id": "E006", "source": "N001", "target": "N004", "relationship": "discharges_to", "line_tag": "TO TANK", "confidence": 0.90, "status": "detected", "evidence": ["llm", "text", "visual"]}
+      ],
+      "lines": [],
+      "annotations": [
+        {"type": "llm_note", "text": "System includes redundancy with pump P-02"},
+        {"type": "llm_note", "text": "Heaters 001 and 002 for oil temperature maintenance"},
+        {"type": "llm_note", "text": "Control valves PCV-001/002, TCV-005; Safety valves PZV-001/002/005"}
+      ],
+      "has_text_layer": true
+    }
+  ],
+  "global_entities": [],
+  "global_connections": [],
+  "uncertain_items": [
+    {"type": "entity", "tag": "TG", "confidence": 0.72, "reason": "Multiple TG instances on drawing"},
+    {"type": "entity", "tag": "TS", "confidence": 0.72, "reason": "Multiple TS instances on drawing"},
+    {"type": "edge", "id": "E004", "reason": "Cooler-to-filter path confidence below threshold — verify visually on P&ID"}
+  ],
+  "validation": {
+    "valid": true,
+    "warning_count": 1,
+    "warnings": [
+      {"code": "LLM_FIRST_PASS_DISCARDED", "message": "Initial Agnes LLM pass without ground truth invented tags (E-01, F-01, PI-101) — discarded per anti-hallucination policy"}
+    ],
+    "errors": []
+  }
+}

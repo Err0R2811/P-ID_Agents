@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<style>
+
+body{
+font-family:Arial;
+background:#fafafa;
+}
+
+.canvas{
+position:relative;
+width:1400px;
+height:auto;
+border:1px solid #999;
+background:white;
+}
+
+.tile{
+
+position:absolute;
+
+border:2px solid #2c7be5;
+
+background:rgba(44,123,229,0.08);
+
+overflow:hidden;
+
+font-size:12px;
+
+padding:4px;
+
+box-sizing:border-box;
+}
+
+.tile h4{
+
+margin:0 0 6px 0;
+
+font-size:13px;
+
+color:#2c7be5;
+}
+
+.item{
+
+margin-left:8px;
+margin-bottom:3px;
+}
+
+.meta{
+
+color:#888;
+font-size:10px;
+margin-bottom:6px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>P&ID Layout Reconstruction</h2>
+
+<div class="canvas">
+
+
+<div class="tile"
+
+style="
+left:629.9800512966657px;
+top:0.0px;
+width:770.0199487033343px;
+height:544.2006269592476px;
+">
+
+<h4>Tile 1</h4>
+
+<div class="meta">
+
+Depth 0<br>
+
+complete<br>
+
+<br>
+
+This tile displays a P&ID segment featuring Compressor K-01. The compressor is depicted with a suction header on the left and a discharge piping run extending to the right and downwards. From a process safety perspective, the primary hazard associated with compressors is the potential for overpressure in the discharge system or casing. This diagram segment does not show any safety-critical relief devices (such as Pressure Safety Valves - PSVs) installed directly on the compressor discharge line or vessel within this view. Furthermore, there are no visible instrumentation elements such as high-pressure trip switches, vibration monitors, or emergency shutdown (ESD) valves. The absence of these protective layers in the immediate vicinity of the compressor suggests that either they are located in adjacent diagram tiles or this specific section lacks critical safety interlocks. Verification of the full system layout is required to ensure adequate pressure protection is provided.
+
+</div>
+
+<b>Equipment</b><br>
+<div class="item">• <b>K-01</b> Compressor</div>
+</div>
+
+<div class="tile"
+
+style="
+left:0.0px;
+top:0.0px;
+width:769.6209746366486px;
+height:544.2006269592476px;
+">
+
+<h4>Tile 0</h4>
+
+<div class="meta">
+
+Depth 0<br>
+
+complete<br>
+
+<br>
+
+The image displays a section of a Process & Instrumentation Diagram (P&ID) titled 'Lube Oil System'. This system is critical for the lubrication of rotating equipment, such as the compressor labeled on the right side of the frame. From a process safety perspective, lube oil systems are vital for preventing catastrophic mechanical failure due to friction and heat generation. The visible portion primarily serves as a header or title block. No specific process lines, instrumentation (like pressure transmitters or flow meters), control valves, or relief devices are visible in this crop. However, the presence of the 'Compressor' label indicates that this diagram details the support system for a high-energy rotating machine. In a full P&ID review, attention would be paid to the reliability of the lube oil pumps (typically duty/standby arrangement), oil coolers, filters, and low-pressure trip interlocks associated with the compressor.
+
+</div>
+
+<b>Equipment</b><br>
+<div class="item">• <b>COMP-001</b> Label 'Compress' (likely Compressor) visible on the right</div>
+<b>Text</b><br>
+<div class="item">• <b>TTL-001</b> Title text 'Lube Oil System'</div>
+</div>
+
+<div class="tile"
+
+style="
+left:629.9800512966657px;
+top:445.2550584212026px;
+width:770.0199487033343px;
+height:544.2006269592476px;
+">
+
+<h4>Tile 3</h4>
+
+<div class="meta">
+
+Depth 0<br>
+
+complete<br>
+
+<br>
+
+The diagram depicts a lube and seal oil system, likely for a turbine or compressor train. Key safety features include a dual-filter setup (OIL FILTER 001/002) with differential pressure indicators (PDT 004) and switches (PDS 004) to monitor filter clogging, ensuring continuous lubrication. A pressure reducing valve (PCV 001) regulates supply pressure. The system includes a heater (HEATER 002) controlled by a temperature switch (TS 002) to maintain oil viscosity. Low-level alarms (L-004) on the tank prevent pump cavitation. A pressure safety valve (PSV 005) provides overpressure protection for the filtered oil header. The arrangement suggests a focus on reliability through redundancy (filters) and monitoring (pressure, level, temperature).
+
+</div>
+
+<b>Equipment</b><br>
+<div class="item">• <b>MANWAY</b> Manway access point</div>
+<div class="item">• <b>FILTER-001</b> Oil Filter (Top)</div>
+<div class="item">• <b>FILTER-002</b> Oil Filter (Bottom)</div>
+<div class="item">• <b>TANK-001</b> Lube and Seal Oil Tank</div>
+<div class="item">• <b>HEATER-002</b> Tank Heater</div>
+<b>Instrument</b><br>
+<div class="item">• <b>L-004</b> Level indicator/switch</div>
+<div class="item">• <b>TIC-005</b> Temperature Indicating Controller</div>
+<div class="item">• <b>TG-004</b> Temperature Gauge</div>
+<div class="item">• <b>PDS-004</b> Pressure Differential Switch</div>
+<div class="item">• <b>PD-004</b> Pressure Differential Indicator</div>
+<div class="item">• <b>PDJ-004</b> Pressure Differential Jumper/Transmitter</div>
+<div class="item">• <b>PDT-004</b> Pressure Differential Transmitter</div>
+<div class="item">• <b>PS-007</b> Pressure Switch</div>
+<div class="item">• <b>TS-002</b> Temperature Switch</div>
+<div class="item">• <b>XL-002</b> Heater Local Indicator/Lamp</div>
+<div class="item">• <b>HS-002</b> Heater Switch</div>
+<b>Valve</b><br>
+<div class="item">• <b>PCV-001</b> Pressure Control Valve</div>
+<div class="item">• <b>PSV-005</b> Pressure Safety Valve</div>
+</div>
+
+<div class="tile"
+
+style="
+left:0.0px;
+top:445.2550584212026px;
+width:769.6209746366486px;
+height:544.2006269592476px;
+">
+
+<h4>Tile 2</h4>
+
+<div class="meta">
+
+Depth 0<br>
+
+complete<br>
+
+<br>
+
+This P&ID depicts a Lube Oil System featuring two parallel pumps (P-01, P-02) drawing from a storage tank. Key safety elements include pressure relief valves (PZV-001, PZV-002) on the discharge of each pump to prevent over-pressurization of the piping or downstream equipment. An Air Cooler is installed to manage oil temperature, followed by a Temperature Indicating Controller (TIC-005) loop. The system utilizes dual check valves on the pump discharges to prevent backflow. Instrumentation includes level indicators (LI-001, LS-004), temperature gauges (TG-001 to TG-005), and pressure gauges (PG-001, PG-005). A heater (XL-001) with high temperature safety switch (HS-001) and thermostat (TS-001) is present for low-temperature start-up conditions. Lines labeled 'TO TANK' suggest a recirculation or drain path.
+
+</div>
+
+<b>Equipment</b><br>
+<div class="item">• <b>P-01</b> Lube Oil Pump</div>
+<div class="item">• <b>P-02</b> Lube Oil Pump</div>
+<div class="item">• <b>K-01</b> Air Cooler</div>
+<div class="item">• <b>XL-001</b> Heater Element</div>
+<div class="item">• <b>DIP-STICK</b> Dip Stick</div>
+<div class="item">• <b>MANWAY-01</b> Manway</div>
+<div class="item">• <b>MANWAY-02</b> Manway</div>
+<b>Instruments</b><br>
+<div class="item">• <b>PG-001</b> Pressure Gauge</div>
+<div class="item">• <b>PG-005</b> Pressure Gauge</div>
+<div class="item">• <b>TG-003</b> Temperature Gauge</div>
+<div class="item">• <b>TG-004</b> Temperature Gauge</div>
+<div class="item">• <b>TG-001</b> Temperature Gauge</div>
+<div class="item">• <b>TI-005</b> Temperature Indicator</div>
+<div class="item">• <b>LS-004</b> Level Switch</div>
+<div class="item">• <b>LI-001</b> Level Indicator</div>
+<div class="item">• <b>TS-001</b> Temperature Switch</div>
+<div class="item">• <b>HS-001</b> High Switch</div>
+<div class="item">• <b>PD-004</b> Pressure Differential Indicator</div>
+<div class="item">• <b>PDS-004</b> Pressure Differential Switch</div>
+<div class="item">• <b>PDI-004</b> Pressure Differential Indicator</div>
+<b>Valves</b><br>
+<div class="item">• <b>PZV-001</b> Pressure Relief Valve</div>
+<div class="item">• <b>PZV-002</b> Pressure Relief Valve</div>
+<div class="item">• <b>PCV-002</b> Pressure Control Valve</div>
+<div class="item">• <b>TCV-005</b> Temperature Control Valve</div>
+<div class="item">• <b>PCV-001</b> Pressure Control Valve</div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#16a34a"/>
+    </marker>
+    <style type="text/css"><![CDATA[
+      .title { font: bold 28px Arial, Helvetica, sans-serif; fill: #1a1a2e; }
+      .subtitle { font: 14px Arial, Helvetica, sans-serif; fill: #555555; }
+      .note { font: italic 11px Arial, Helvetica, sans-serif; fill: #888888; }
+      .box-text { font: bold 13px Arial, Helvetica, sans-serif; fill: #1e293b; }
+      .small-text { font: 10px Arial, Helvetica, sans-serif; fill: #475569; }
+      .valve-text { font: 9px Arial, Helvetica, sans-serif; fill: #92400e; }
+      .inst-text { font: bold 8px Arial, Helvetica, sans-serif; fill: #5b21b6; }
+      .flow-label { font: 10px Arial, Helvetica, sans-serif; fill: #64748b; }
+      .panel { font: 11px Arial, Helvetica, sans-serif; fill: #475569; }
+    ]]></style>
+  </defs>
+
+  <rect width="1600" height="1100" fill="#f8f9fa"/>
+
+  <text x="800" y="55" text-anchor="middle" class="title">Lube Oil System &#8212; Process Flowchart</text>
+  <text x="800" y="85" text-anchor="middle" class="subtitle">Compressor K-01  |  Source: 123.pdf P&amp;ID extraction</text>
+  <text x="800" y="110" text-anchor="middle" class="note">Schematic flow &#8212; equipment tags from extraction; connections inferred from typical lube oil topology</text>
+
+  <rect x="550" y="140" width="500" height="90" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="800" y="175" text-anchor="middle" class="box-text" font-size="16">COMPRESSOR K-01</text>
+  <text x="800" y="200" text-anchor="middle" class="small-text">Lube Oil System</text>
+
+  <rect x="600" y="290" width="400" height="80" rx="10" fill="#cffafe" stroke="#0891b2" stroke-width="2"/>
+  <text x="800" y="325" text-anchor="middle" class="box-text">AIR COOLER H-004</text>
+  <text x="800" y="345" text-anchor="middle" class="small-text">TG  |  PDS-003</text>
+
+  <rect x="180" y="290" width="260" height="80" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="310" y="325" text-anchor="middle" class="box-text">HEATER 001</text>
+  <text x="310" y="345" text-anchor="middle" class="small-text">TS  |  XL-001  |  HS-001</text>
+
+  <rect x="1160" y="290" width="260" height="80" rx="10" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text x="1290" y="325" text-anchor="middle" class="box-text">HEATER 002</text>
+  <text x="1290" y="345" text-anchor="middle" class="small-text">TS  |  XL-002  |  HS</text>
+
+  <rect x="620" y="430" width="360" height="80" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="800" y="465" text-anchor="middle" class="box-text">OIL FILTER 007</text>
+  <text x="800" y="485" text-anchor="middle" class="small-text">PS</text>
+
+  <rect x="160" y="430" width="280" height="80" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="300" y="465" text-anchor="middle" class="box-text">LUBE OIL PUMP P-01</text>
+  <text x="300" y="485" text-anchor="middle" class="small-text">Primary</text>
+
+  <rect x="1160" y="430" width="280" height="80" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="1300" y="465" text-anchor="middle" class="box-text">LUBE OIL PUMP P-02</text>
+  <text x="1300" y="485" text-anchor="middle" class="small-text">Standby</text>
+
+  <rect x="500" y="620" width="600" height="100" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="800" y="655" text-anchor="middle" class="box-text" font-size="14">LUBE AND SEAL OIL TANK</text>
+  <text x="800" y="680" text-anchor="middle" class="small-text">LG  |  LS  |  MANWAY 004/005  |  DIP STICK 004</text>
+
+  <g transform="translate(320,560)">
+    <polygon points="0,20 20,0 40,20 20,40" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="58" text-anchor="middle" class="valve-text">PCV-001</text>
+  </g>
+  <g transform="translate(1240,560)">
+    <polygon points="0,20 20,0 40,20 20,40" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="58" text-anchor="middle" class="valve-text">PCV-002</text>
+  </g>
+  <g transform="translate(780,380)">
+    <polygon points="0,20 20,0 40,20 20,40" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="58" text-anchor="middle" class="valve-text">TCV-005</text>
+  </g>
+  <g transform="translate(280,380)">
+    <polygon points="0,20 20,0 40,20 20,40" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="58" text-anchor="middle" class="valve-text">PZV-001</text>
+  </g>
+  <g transform="translate(1280,380)">
+    <polygon points="0,20 20,0 40,20 20,40" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="58" text-anchor="middle" class="valve-text">PZV-002</text>
+  </g>
+  <g transform="translate(780,250)">
+    <polygon points="0,20 20,0 40,20 20,40" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="58" text-anchor="middle" class="valve-text">PZV-005</text>
+  </g>
+
+  <circle cx="1450" cy="170" r="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="1450" y="167" text-anchor="middle" class="inst-text">TIC</text>
+  <text x="1450" y="178" text-anchor="middle" class="inst-text">004</text>
+
+  <circle cx="1450" cy="320" r="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="1450" y="317" text-anchor="middle" class="inst-text">PDT</text>
+  <text x="1450" y="328" text-anchor="middle" class="inst-text">004</text>
+
+  <circle cx="1450" cy="470" r="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="1450" y="475" text-anchor="middle" class="inst-text">PDI</text>
+
+  <circle cx="100" cy="170" r="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="100" y="167" text-anchor="middle" class="inst-text">PG</text>
+  <text x="100" y="178" text-anchor="middle" class="inst-text">001</text>
+
+  <circle cx="100" cy="320" r="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="100" y="317" text-anchor="middle" class="inst-text">PD</text>
+  <text x="100" y="328" text-anchor="middle" class="inst-text">005</text>
+
+  <line x1="680" y1="620" x2="340" y2="510" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="460" y="560" class="flow-label">Suction</text>
+
+  <line x1="920" y1="620" x2="1300" y2="510" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="1140" y="560" class="flow-label">Suction</text>
+
+  <line x1="440" y1="470" x2="620" y2="470" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="530" y="460" class="flow-label">Discharge</text>
+
+  <line x1="1160" y1="470" x2="980" y2="470" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <line x1="800" y1="430" x2="800" y2="370" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="820" y="400" class="flow-label">Supply</text>
+
+  <line x1="700" y1="430" x2="380" y2="370" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="900" y1="430" x2="1220" y2="370" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <line x1="800" y1="290" x2="800" y2="230" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="820" y="260" class="flow-label">To K-01</text>
+
+  <line x1="440" y1="290" x2="600" y2="230" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1160" y1="290" x2="1000" y2="230" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <path d="M 640 140 Q 400 140 400 560" fill="none" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="420" y="350" class="flow-label" fill="#16a34a">Return</text>
+
+  <path d="M 960 140 Q 1200 140 1200 560" fill="none" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="1180" y="350" class="flow-label" fill="#16a34a">TO TANK</text>
+
+  <line x1="1422" y1="170" x2="820" y2="250" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="1150" y="200" class="flow-label" fill="#7c3aed" font-style="italic">TIC-004 &#8594; TCV-005</text>
+
+  <rect x="60" y="780" width="380" height="200" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="80" y="810" class="box-text" font-size="12">Legend</text>
+  <rect x="80" y="825" width="30" height="18" rx="3" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="120" y="838" class="small-text">Equipment</text>
+  <polygon points="80,860 95,845 110,860 95,875" fill="#fef3c7" stroke="#d97706"/>
+  <text x="120" y="863" class="small-text">Valve</text>
+  <circle cx="95" cy="895" r="12" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="120" y="899" class="small-text">Instrument</text>
+  <line x1="80" y1="920" x2="110" y2="920" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="120" y="924" class="small-text">Process flow</text>
+  <line x1="80" y1="950" x2="110" y2="950" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="120" y="954" class="small-text">Return to tank</text>
+
+  <rect x="500" y="780" width="600" height="80" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="800" y="810" text-anchor="middle" class="panel">Extracted: 8 equipment  |  12 instruments  |  6 valves</text>
+  <text x="800" y="835" text-anchor="middle" class="panel">Tags: K-01, P-01, P-02, TIC-004, PDT-004, PG-001, PCV-001, PCV-002, TCV-005, PZV-001, PZV-002, PZV-005</text>
+
+  <rect x="500" y="880" width="600" height="100" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="800" y="910" text-anchor="middle" class="box-text" font-size="12">Process Flow Sequence</text>
+  <text x="800" y="940" text-anchor="middle" class="panel">Tank &#8594; Pumps (P-01/P-02) &#8594; Oil Filter &#8594; Heaters / Air Cooler &#8594; Compressor K-01 &#8594; Return to Tank</text>
+  <text x="800" y="965" text-anchor="middle" class="small-text">Pressure: PCV-001/002, PZV-001/002/005  |  Temperature: TIC-004, TCV-005, Heaters 001/002</text>
+</svg>
