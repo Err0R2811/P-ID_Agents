@@ -8,8 +8,9 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "openai>=3.0.0",
-    "pydantic>=2.13.4",
+    "openrouter>=1.1.55",
+    "httpx>=0.28.1",
+    "pydantic>=2.11.2",
     "pydantic-settings>=2.15.0",
     "pymupdf>=1.28.2",
     "python-dotenv>=1.2.2",

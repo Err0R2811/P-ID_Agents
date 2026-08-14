@@ -50,7 +50,7 @@ def _build_parser() -> argparse.ArgumentParser:
         "--model",
         type=str,
         default=None,
-        help="OpenAI model name (default: gpt-4o)",
+        help="OpenRouter model name (default: x-ai/grok-4.6)",
     )
     parser.add_argument(
         "--log-level",

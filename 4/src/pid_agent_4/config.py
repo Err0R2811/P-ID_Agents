@@ -5,6 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from dotenv import load_dotenv
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 load_dotenv()
@@ -15,9 +16,16 @@ class Settings(BaseSettings):
 
     model_config = SettingsConfigDict(env_prefix="PID_AGENT_", extra="ignore")
 
-    openai_api_key: str = ""
-    model: str = "gpt-4o"
-    base_url: str | None = None  # for OpenAI-compatible endpoints
+    openrouter_api_key: str = Field(
+        default="",
+        validation_alias=AliasChoices(
+            "PID_AGENT_OPENROUTER_API_KEY",
+            "OPENROUTER_API_KEY",
+            "OPENAI_API_KEY",
+        ),
+    )
+    model: str = "x-ai/grok-4.6"
+    base_url: str | None = None  # override OpenRouter server URL if needed
 
     output_dir: Path = Path("./out")
     overlap: float = 0.15

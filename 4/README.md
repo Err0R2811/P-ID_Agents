@@ -9,7 +9,7 @@ summary and a JSON connection list.
 2. Splits page 1 into three overlapping vertical bands (15% overlap by default).
 3. Extracts all words and their bounding boxes from the source page.
 4. Renders each split to a PNG.
-5. Sends the three images plus the word list to two parallel OpenAI `gpt-4o` calls:
+5. Sends the three images plus the word list to two parallel OpenRouter `x-ai/grok-4.6` calls:
    - Markdown generation (equipment, instruments, lines, layout notes)
    - JSON generation (source/target connections with line numbers and tags)
 6. Merges/deduplicates the results and writes `output.md` and `output.json`.
@@ -24,7 +24,7 @@ uv pip install -e .
 ## Usage
 
 ```bash
-export OPENAI_API_KEY="sk-..."
+export OPENROUTER_API_KEY="sk-..."
 pid-agent-4 path/to/pid.pdf --output-dir ./out --overlap 0.15 --dpi 150
 ```
 
@@ -41,7 +41,7 @@ Settings can be passed as CLI flags or environment variables with the
 
 | CLI flag | Environment variable | Default |
 |---|---|---|
-| `--model` | `PID_AGENT_MODEL` | `gpt-4o` |
+| `--model` | `PID_AGENT_MODEL` | `x-ai/grok-4.6` |
 | `--output-dir` | `PID_AGENT_OUTPUT_DIR` | `./out` |
 | `--overlap` | `PID_AGENT_OVERLAP` | `0.15` |
 | `--dpi` | `PID_AGENT_DPI` | `150` |

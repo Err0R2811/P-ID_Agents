@@ -51,8 +51,8 @@ def test_parse_json_skips_invalid_items():
 async def test_run_llm_calls_parallel(tmp_path: Path):
     """Mock both LLM calls and verify parallel execution with valid responses."""
     settings = Settings(
-        openai_api_key="sk-test",
-        model="gpt-test",
+        openrouter_api_key="sk-test",
+        model="x-ai/grok-test",
         output_dir=tmp_path,
     )
 
@@ -85,12 +85,14 @@ async def test_run_llm_calls_parallel(tmp_path: Path):
         )
 
     mock_client = MagicMock()
-    mock_client.chat.completions.create = AsyncMock(side_effect=fake_chat_completions)
+    mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+    mock_client.__aexit__ = AsyncMock(return_value=None)
+    mock_client.chat.send_async = AsyncMock(side_effect=fake_chat_completions)
 
-    with patch("pid_agent_4.llm.openai.AsyncOpenAI", return_value=mock_client):
+    with patch("pid_agent_4.llm.OpenRouter", return_value=mock_client):
         markdown, connections = await run_llm_calls_with_partial([png], words, settings)
 
-    assert mock_client.chat.completions.create.call_count == 2
+    assert mock_client.chat.send_async.call_count == 2
     assert markdown == markdown_text
     assert len(connections) == 1
     assert connections[0].source_tag == "P-101"
@@ -98,7 +100,7 @@ async def test_run_llm_calls_parallel(tmp_path: Path):
 
 @pytest.mark.asyncio
 async def test_run_llm_calls_missing_key(tmp_path: Path):
-    settings = Settings(openai_api_key="", output_dir=tmp_path)
+    settings = Settings(openrouter_api_key="", output_dir=tmp_path)
     png = tmp_path / "part.png"
     png.write_bytes(b"\x89PNG\r\n\x1a\n")
     words = [ExtractedWord(text="P-101", x0=0, y0=0, x1=10, y1=10, split_index=0)]

@@ -8,7 +8,7 @@
 - Splits page 1 into three overlapping vertical bands (15% overlap by default).
 - Renders each band to a PNG.
 - Extracts words with bounding boxes from the source page.
-- Calls OpenAI `gpt-4o` twice in parallel (Markdown summary + JSON connection list).
+- Calls OpenRouter `x-ai/grok-4.6` twice in parallel (Markdown summary + JSON connection list).
 - Writes `output.md` and `output.json`.
 
 ## Common Commands
@@ -18,7 +18,7 @@
 uv run pytest
 
 # Run the CLI
-export OPENAI_API_KEY="sk-..."
+export OPENROUTER_API_KEY="sk-..."
 pid-agent-4 path/to/pid.pdf --output-dir ./out
 
 # Split/extract only (no LLM call)
@@ -35,7 +35,7 @@ uv build --wheel
 - `src/pid_agent_4/pdf.py` — PDF open, vector validation, dimensions.
 - `src/pid_agent_4/splitter.py` — 3-way vertical split and PNG render.
 - `src/pid_agent_4/extractor.py` — word extraction from the source page with split/overlap tagging.
-- `src/pid_agent_4/llm.py` — OpenAI async client, prompt builders, parallel calls.
+- `src/pid_agent_4/llm.py` — OpenRouter async client, prompt builders, parallel calls.
 - `src/pid_agent_4/merger.py` — Markdown and JSON merge/dedup.
 - `src/pid_agent_4/output.py` — write `.md` and `.json` files.
 

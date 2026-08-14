@@ -7,7 +7,8 @@ import base64
 import json
 from pathlib import Path
 
-import openai
+import httpx
+from openrouter import OpenRouter, errors as openrouter_errors
 from tenacity import (
     retry,
     retry_if_exception_type,
@@ -24,10 +25,15 @@ logger = get_logger(__name__)
 
 
 RETRY_EXCEPTIONS = (
-    openai.APIConnectionError,
-    openai.RateLimitError,
-    openai.APITimeoutError,
-    openai.InternalServerError,
+    openrouter_errors.TooManyRequestsResponseError,
+    openrouter_errors.ServiceUnavailableResponseError,
+    openrouter_errors.InternalServerResponseError,
+    openrouter_errors.BadGatewayResponseError,
+    openrouter_errors.ProviderOverloadedResponseError,
+    openrouter_errors.EdgeNetworkTimeoutResponseError,
+    openrouter_errors.RequestTimeoutResponseError,
+    httpx.TimeoutException,
+    httpx.NetworkError,
 )
 
 
@@ -139,24 +145,39 @@ def _build_json_messages(
     return [{"role": "user", "content": content}]
 
 
+def _extract_response_text(response) -> str:
+    """Extract string content from an OpenRouter chat response."""
+    content = response.choices[0].message.content
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        return "".join(
+            part.text
+            for part in content
+            if getattr(part, "type", None) == "text"
+        )
+    return ""
+
+
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=2, max=30),
     retry=retry_if_exception_type(RETRY_EXCEPTIONS),
     reraise=True,
 )
-async def _call_openai(
-    client: openai.AsyncOpenAI,
+async def _call_openrouter(
+    client: OpenRouter,
     messages: list[dict],
     settings: Settings,
 ) -> str:
-    response = await client.chat.completions.create(
+    response = await client.chat.send_async(
         model=settings.model,
-        messages=messages,  # type: ignore[arg-type]
+        messages=messages,
         max_tokens=settings.llm_max_tokens,
-        timeout=settings.request_timeout,
+        timeout_ms=settings.request_timeout * 1000,
+        retries=None,
     )
-    return response.choices[0].message.content or ""
+    return _extract_response_text(response)
 
 
 def _clean_json(text: str) -> str:
@@ -201,13 +222,13 @@ def _parse_json(text: str) -> list[PIDConnection]:
 async def _generate_markdown(
     image_paths: list[Path],
     words: list[ExtractedWord],
-    client: openai.AsyncOpenAI,
+    client: OpenRouter,
     settings: Settings,
 ) -> str:
     messages = _build_markdown_messages(image_paths, words)
     logger.info("Calling LLM for Markdown (model=%s)", settings.model)
     try:
-        return await _call_openai(client, messages, settings)
+        return await _call_openrouter(client, messages, settings)
     except Exception as exc:
         raise LLMCallError(f"Markdown LLM call failed: {exc}") from exc
 
@@ -215,17 +236,28 @@ async def _generate_markdown(
 async def _generate_json(
     image_paths: list[Path],
     words: list[ExtractedWord],
-    client: openai.AsyncOpenAI,
+    client: OpenRouter,
     settings: Settings,
 ) -> list[PIDConnection]:
     messages = _build_json_messages(image_paths, words)
     logger.info("Calling LLM for JSON (model=%s)", settings.model)
     try:
-        text = await _call_openai(client, messages, settings)
+        text = await _call_openrouter(client, messages, settings)
     except Exception as exc:
         raise LLMCallError(f"JSON LLM call failed: {exc}") from exc
 
     return _parse_json(text)
+
+
+def _openrouter_client(settings: Settings) -> OpenRouter:
+    """Build an async OpenRouter client from settings."""
+    kwargs: dict = {
+        "api_key": settings.openrouter_api_key,
+        "timeout_ms": settings.request_timeout * 1000,
+    }
+    if settings.base_url is not None:
+        kwargs["server_url"] = settings.base_url
+    return OpenRouter(**kwargs)
 
 
 async def run_llm_calls(
@@ -237,29 +269,26 @@ async def run_llm_calls(
 
     Returns (markdown_text, connections).
     """
-    if not settings.openai_api_key:
+    if not settings.openrouter_api_key:
         raise LLMCallError(
-            "OPENAI_API_KEY is not set. Provide it as an environment variable "
+            "OPENROUTER_API_KEY is not set. Provide it as an environment variable "
+            "(PID_AGENT_OPENROUTER_API_KEY, OPENROUTER_API_KEY, or OPENAI_API_KEY) "
             "or in a .env file."
         )
 
-    client = openai.AsyncOpenAI(
-        api_key=settings.openai_api_key,
-        base_url=settings.base_url,
-    )
+    async with _openrouter_client(settings) as client:
+        markdown_task = _generate_markdown(image_paths, words, client, settings)
+        json_task = _generate_json(image_paths, words, client, settings)
 
-    markdown_task = _generate_markdown(image_paths, words, client, settings)
-    json_task = _generate_json(image_paths, words, client, settings)
-
-    try:
-        markdown, connections = await asyncio.gather(
-            markdown_task, json_task, return_exceptions=False
-        )
-    except Exception as exc:
-        # If one fails, the other result is lost because gather raises the first
-        # exception. Try to provide partial results by calling individually.
-        logger.error("Parallel LLM call failed: %s", exc)
-        raise
+        try:
+            markdown, connections = await asyncio.gather(
+                markdown_task, json_task, return_exceptions=False
+            )
+        except Exception as exc:
+            # If one fails, the other result is lost because gather raises the first
+            # exception. Try to provide partial results by calling individually.
+            logger.error("Parallel LLM call failed: %s", exc)
+            raise
 
     return markdown, connections
 
@@ -274,22 +303,19 @@ async def run_llm_calls_with_partial(
     Useful for graceful degradation: if one call fails, the other result is
     still returned.
     """
-    if not settings.openai_api_key:
+    if not settings.openrouter_api_key:
         raise LLMCallError(
-            "OPENAI_API_KEY is not set. Provide it as an environment variable "
+            "OPENROUTER_API_KEY is not set. Provide it as an environment variable "
+            "(PID_AGENT_OPENROUTER_API_KEY, OPENROUTER_API_KEY, or OPENAI_API_KEY) "
             "or in a .env file."
         )
 
-    client = openai.AsyncOpenAI(
-        api_key=settings.openai_api_key,
-        base_url=settings.base_url,
-    )
-
-    results = await asyncio.gather(
-        _generate_markdown(image_paths, words, client, settings),
-        _generate_json(image_paths, words, client, settings),
-        return_exceptions=True,
-    )
+    async with _openrouter_client(settings) as client:
+        results = await asyncio.gather(
+            _generate_markdown(image_paths, words, client, settings),
+            _generate_json(image_paths, words, client, settings),
+            return_exceptions=True,
+        )
 
     markdown: str | None = None
     connections: list[PIDConnection] | None = None
